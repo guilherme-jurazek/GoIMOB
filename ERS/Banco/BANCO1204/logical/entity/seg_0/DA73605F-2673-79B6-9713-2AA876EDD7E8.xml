@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA73605F-2673-79B6-9713-2AA876EDD7E8" name="Juridica">
+<createdBy>mateu</createdBy>
+<createdTime>2022-03-06 20:20:33 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD_EMPRESA" id="B1E464B5-261E-F700-DBAB-AEAA2CF84104">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 15:48:58 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_PES" id="891E2CB6-FA00-C5F2-1B95-28820F6260A2">
+<createdBy>mateu</createdBy>
+<createdTime>2022-03-06 21:22:39 UTC</createdTime>
+<generatorID>085BAA45-5273-C5E0-4012-83207611433A</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>4F8E44C1-2D99-1226-E179-861C0668A3CA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CNPJ_EMPR" id="35720E53-ECA0-98C2-91F5-2B8C7046CFF4">
+<createdBy>mateu</createdBy>
+<createdTime>2022-03-06 21:25:59 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOME_FANTASIA" id="D8DAF74F-C803-21D3-B628-25504E98A287">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 15:41:50 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INSCRICAO_ESTADUAL" id="2ADA19F4-C92B-38C1-923F-04F87DDC8D23">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 15:42:06 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1BCB483A-7098-B59A-244A-66D16CD2B154" name="Juridica PK">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 15:49:12 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B1E464B5-261E-F700-DBAB-AEAA2CF84104</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

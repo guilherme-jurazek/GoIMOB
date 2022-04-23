@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D5AAC8BA-720D-7E64-04CA-0D4AF437B0C4" name="Agendamento_Visita">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:15:13 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD_AGENDAMENTO" id="412ABBA5-9597-EE46-E6E3-0EF719BB438C">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:15:22 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_CORRETOR" id="0D21D7AA-CD73-AA71-B96A-C40C1446C6A9">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:16:29 UTC</createdTime>
+<generatorID>1614E98C-F23C-0102-5EB4-42F23D55446D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>64F7E0A2-C0A5-B15D-2F05-328A5C0808DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_COR" id="D893B73E-3856-4AC3-E896-ABB497A220FF">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:16:29 UTC</createdTime>
+<generatorID>1614E98C-F23C-0102-5EB4-42F23D55446D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>6EEC089F-4BBD-2A2B-A585-BD14F6B650BA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_USU" id="70716545-245A-0FAA-CAB1-276925648B43">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:16:41 UTC</createdTime>
+<generatorID>7BACC2BD-79CC-6F7F-2081-894981C2779D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>A9BDB66D-F7EA-177F-6C51-ACA8ED38BAE2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_IMOVEL" id="E0A8FD76-0BD8-5036-16C7-9FB92A5B1434">
+<createdBy>Aluno</createdBy>
+<createdTime>2022-04-12 23:15:08 UTC</createdTime>
+<generatorID>E780E39B-1536-6454-C736-66D5F3B82E4E</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>AD35D7AE-AFDD-6739-3EAC-D91F8082F134</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATA_AGENDAMENTO" id="344D133D-8E76-0C32-77F4-1821A4D48FB7">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:15:38 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6C1236B4-FB2C-68F5-8250-DD6D28C244FA" name="Agendamento_Visita PK">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:16:29 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>412ABBA5-9597-EE46-E6E3-0EF719BB438C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

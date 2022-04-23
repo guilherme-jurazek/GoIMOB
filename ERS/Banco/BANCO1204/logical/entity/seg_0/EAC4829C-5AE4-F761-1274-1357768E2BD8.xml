@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EAC4829C-5AE4-F761-1274-1357768E2BD8" name="Historico_Vistoria">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:13:33 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COD_CORRETOR" id="B13B0D10-8CC9-73A2-4558-A9A594D8F5CC">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:13:53 UTC</createdTime>
+<generatorID>74DD73BF-42F2-3845-ED74-6DEAAB0DE044</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>64F7E0A2-C0A5-B15D-2F05-328A5C0808DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_COR" id="1556AD9E-1F5C-8CD2-CF83-BD281D87A085">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:13:53 UTC</createdTime>
+<generatorID>74DD73BF-42F2-3845-ED74-6DEAAB0DE044</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>6EEC089F-4BBD-2A2B-A585-BD14F6B650BA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_IMOVEL" id="F48A3BAD-5E8D-4A27-5421-1E1C0BE2C9F2">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:14:32 UTC</createdTime>
+<generatorID>86C5C117-1C2D-A6FD-4742-442ABFA7AC14</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>87E58C53-DAF0-23E2-28F6-23C53AB593E3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_VISTORIA" id="C5E07F39-374D-CEDC-FEBA-FF1C65834F42">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:14:32 UTC</createdTime>
+<generatorID>86C5C117-1C2D-A6FD-4742-442ABFA7AC14</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>281CF4F5-20EE-8213-C907-53934494C948</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="42A8585F-351B-708D-46A7-0D14CCB651B7" name="Agendamento_Vistoria PK">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:13:53 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B13B0D10-8CC9-73A2-4558-A9A594D8F5CC</attributeRef>
+<attributeRef>1556AD9E-1F5C-8CD2-CF83-BD281D87A085</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
