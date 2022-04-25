@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="798C6AF4-9D2B-81FB-5A18-1A12042B48E7" name="ALUGUEL_IMOVEL">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>220C8B57-D00D-CBD1-F525-745B6CBB5302</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<abbreviation>ALUGUEL_IMOVEL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_ALUGUEL" id="9F4BEE78-463F-907B-7EC1-2213A17FCD8C">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>AC5BAD74-0663-737D-9A3A-73AC4769CB0F</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contrato_COD_CONTRATO" id="342D3AE1-D100-A4F1-EBCC-AF524C71AD0F">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>77A0E4A6-0ACC-24B1-F619-6053D410E5AC</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF3E946D-49A0-2010-1CC3-AADB9175B88E" referredColumn="38C358F8-35B4-BE4F-A191-CA8A3F37D4CD"/>
+</associations>
+</Column>
+<Column name="COD_CONTRATO" id="A1F62AA5-120E-2D33-7C3B-817D5FC31813">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-25 17:18:23 UTC</createdTime>
+<generatorID>FFEF5063-42DD-30E2-EE5F-7E1649F3E1D4</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTRATO_COD_CONTRATO2" id="6D3DF2E3-4065-136B-6AA4-AF932855FA96">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-25 18:56:15 UTC</createdTime>
+<generatorID>2AD0D8D2-AC9E-DC21-F26B-82140304E6F1</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E8E6A58-2248-D684-00C4-9249074475EB" referredColumn="38C358F8-35B4-BE4F-A191-CA8A3F37D4CD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A9EF44EE-8E6C-0CEA-3731-5C8A287F1370" name="ALUGUEL_IMOVEL_PK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>DC5E5D8E-E4C8-E21A-12E6-06E00D53EC1B</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F4BEE78-463F-907B-7EC1-2213A17FCD8C"/>
+<colUsage columnID="6D3DF2E3-4065-136B-6AA4-AF932855FA96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BB97F9D-0802-3F4F-E9C4-05659B06B20D" name="ALUGUEL_IMOVEL__IDX">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A9F970B7-173B-2AC1-20D3-717CA726E30A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="342D3AE1-D100-A4F1-EBCC-AF524C71AD0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39DF9B6D-F6B9-AECF-76F2-16632873C08E" name="ALUGUEL_IMOVEL__IDX">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-25 18:56:15 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>995E617A-2E1F-4659-3563-1A778A18BE54</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6D3DF2E3-4065-136B-6AA4-AF932855FA96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2211F14-B626-6B5F-42B4-DFD65A6E5813" name="ALUGUEL_IMOVEL_Contrato_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>A9F970B7-173B-2AC1-20D3-717CA726E30A</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="342D3AE1-D100-A4F1-EBCC-AF524C71AD0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8E35057-0BAA-9BAB-7DDF-BDBA86E99BD1" name="ALUGUEL_IMOVEL_CONTRATO_FKv2">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-25 18:56:15 UTC</createdTime>
+<generatorID>995E617A-2E1F-4659-3563-1A778A18BE54</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D3DF2E3-4065-136B-6AA4-AF932855FA96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

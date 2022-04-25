@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E30066EB-3D9B-B283-1D96-444CC88EDC11" name="CORRETORA">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>F051EA70-6ECF-C08B-1270-07236DC2AA8B</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_CORRETORA" id="4ACEC541-9C25-DB22-4CA0-C76D6C4BFB54">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>0E7B2F19-74EC-AC18-DDAC-96AE2B2579AB</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_COR" id="7B1EF6E5-F1A8-8C0A-5DFB-A2ACEFA537E0">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>E5E59FDC-1482-1AAA-2413-4A8F7EE685AA</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP_COR" id="B67CF6F3-3596-E572-2CA3-A9629D3D1860">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>737FB5EF-0D7A-CBD9-F50E-3A1929D03285</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JURIDICA_COD_EMPRESA" id="8E572002-7DF3-47F9-5B20-117C8CD1DA5C">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>A8CF4CBD-8FBC-9BC2-AE4D-3A46939A23A2</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="288B7963-A904-7027-5583-D575E3C13CEB" referredColumn="1E2BAE5F-240B-5481-58F2-ACAE835090BC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="174EEF25-90B7-2D94-8842-16E23C8F9AF1" name="CORRETORA_PK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>4CA7E6EA-E4D2-8C3B-D649-EEE2C5C63AD7</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4ACEC541-9C25-DB22-4CA0-C76D6C4BFB54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D706EE8D-16EE-2B37-B573-9F823943CD49" name="Corretora__IDX">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>AAEECADD-6994-431F-4E26-289A33A81A78</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8E572002-7DF3-47F9-5B20-117C8CD1DA5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE05547A-71F1-6EDA-375D-6478E83EA57D" name="CORRETORA_JURIDICA_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>AAEECADD-6994-431F-4E26-289A33A81A78</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E572002-7DF3-47F9-5B20-117C8CD1DA5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

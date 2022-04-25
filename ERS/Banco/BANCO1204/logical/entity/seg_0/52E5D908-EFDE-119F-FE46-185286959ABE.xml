@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="52E5D908-EFDE-119F-FE46-185286959ABE" name="Corretor">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="52E5D908-EFDE-119F-FE46-185286959ABE" name="CORRETOR">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 15:50:31 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
@@ -22,6 +22,20 @@
 <engineerTo>
 <item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_CORRETORA" id="6EEC089F-4BBD-2A2B-A585-BD14F6B650BA">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 15:55:06 UTC</createdTime>
+<generatorID>3959E19A-A552-5F3F-31B9-3842F734C4E9</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>0E7B2F19-74EC-AC18-DDAC-96AE2B2579AB</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -54,20 +68,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="COD_COR" id="6EEC089F-4BBD-2A2B-A585-BD14F6B650BA">
-<createdBy>PORTABLE</createdBy>
-<createdTime>2022-03-09 15:55:06 UTC</createdTime>
-<generatorID>3959E19A-A552-5F3F-31B9-3842F734C4E9</generatorID>
-<ownerDesignName>BANCO1204</ownerDesignName>
-<engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
-</engineerTo>
-<referedAttribute>0E7B2F19-74EC-AC18-DDAC-96AE2B2579AB</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="COD_PES" id="D64C8FF4-B50E-C267-E130-E556F94CDA7A">
 <createdBy>Aluno</createdBy>
 <createdTime>2022-04-12 23:07:49 UTC</createdTime>
@@ -88,8 +88,9 @@
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 15:51:10 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F051EA70-6ECF-C08B-1270-07236DC2AA8B" name="Corretora">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F051EA70-6ECF-C08B-1270-07236DC2AA8B" name="CORRETORA">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 15:44:20 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="COD_COR" id="0E7B2F19-74EC-AC18-DDAC-96AE2B2579AB">
+<Attribute name="COD_CORRETORA" id="0E7B2F19-74EC-AC18-DDAC-96AE2B2579AB">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 15:45:07 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
@@ -75,8 +75,9 @@
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 15:45:33 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

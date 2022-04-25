@@ -27,20 +27,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="COD_CONTRATO" id="979CDA54-1440-D97D-3FAD-4E572E2ADBE8">
-<createdBy>PORTABLE</createdBy>
-<createdTime>2022-04-06 20:39:24 UTC</createdTime>
-<generatorID>B3A220FB-B93A-22AC-2E2E-66044C96CB1C</generatorID>
-<ownerDesignName>BANCO1204</ownerDesignName>
-<engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
-</engineerTo>
-<referedAttribute>2955A390-2D8C-05AA-B8B9-F20FDF027C8B</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="TIPO_CV" id="46EC5305-43E5-091F-C587-971E6E1434A2">
 <createdBy>Aluno</createdBy>
 <createdTime>2022-04-12 23:11:46 UTC</createdTime>
@@ -54,14 +40,29 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="COD_CONTRATO" id="9E270821-7E21-7100-0F61-C411BC61D52A">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:54:59 UTC</createdTime>
+<generatorID>B3A220FB-B93A-22AC-2E2E-66044C96CB1C</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>2955A390-2D8C-05AA-B8B9-F20FDF027C8B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="B290D13C-B13A-D7B5-B1DE-7B0486E41A52" name="COMPRA_IMOVEL PK">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-04-06 20:35:02 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C5D4C50-2A02-7EDE-A880-EECDCD99E11C" name="NIVEL_ACESSO">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>C0B5E0AA-1A7B-13C0-6C13-EFCD81CC5F31</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_NIVEL_ACESSO" id="F45F9C56-E2EA-4627-72B7-9045E9CE53A5">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>D7B91CFA-258C-3C68-122A-52F064C8EE4A</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRICAO_NIVEL_ACESSO" id="83E3A839-F057-3E16-C49A-1D90EEDFBD57">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>A778F1B6-64E5-9B8F-E247-2A8BCD9B5227</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30DCB8BF-500C-9279-2711-2C8234BE121A" name="NIVEL_ACESSO_PK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>13B4239A-EF75-893D-9B39-0257B886DE6B</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F45F9C56-E2EA-4627-72B7-9045E9CE53A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

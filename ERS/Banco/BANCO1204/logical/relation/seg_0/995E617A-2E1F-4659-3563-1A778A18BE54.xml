@@ -1,13 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_23" directorySegmentName="seg_0" id="A9F970B7-173B-2AC1-20D3-717CA726E30A">
-<createdBy>PORTABLE</createdBy>
-<createdTime>2022-04-06 20:39:35 UTC</createdTime>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_30" directorySegmentName="seg_0" id="995E617A-2E1F-4659-3563-1A778A18BE54">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-25 18:44:03 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
 <engineerTo>
 <item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
 </engineerTo>
 <sourcePk>8FA4E6FC-27EC-06E3-E34E-A95C11E244AD</sourcePk>
-<identifying>false</identifying>
+<identifying>true</identifying>
 <optionalSource>true</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>

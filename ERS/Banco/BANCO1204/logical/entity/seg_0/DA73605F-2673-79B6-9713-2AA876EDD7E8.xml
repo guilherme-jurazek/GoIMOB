@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA73605F-2673-79B6-9713-2AA876EDD7E8" name="Juridica">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA73605F-2673-79B6-9713-2AA876EDD7E8" name="JURIDICA">
 <createdBy>mateu</createdBy>
 <createdTime>2022-03-06 20:20:33 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
@@ -22,20 +22,6 @@
 <engineerTo>
 <item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="COD_PES" id="891E2CB6-FA00-C5F2-1B95-28820F6260A2">
-<createdBy>mateu</createdBy>
-<createdTime>2022-03-06 21:22:39 UTC</createdTime>
-<generatorID>085BAA45-5273-C5E0-4012-83207611433A</generatorID>
-<ownerDesignName>BANCO1204</ownerDesignName>
-<engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
-</engineerTo>
-<referedAttribute>4F8E44C1-2D99-1226-E179-861C0668A3CA</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -81,6 +67,20 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_PES" id="891E2CB6-FA00-C5F2-1B95-28820F6260A2">
+<createdBy>mateu</createdBy>
+<createdTime>2022-03-06 21:22:39 UTC</createdTime>
+<generatorID>085BAA45-5273-C5E0-4012-83207611433A</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>4F8E44C1-2D99-1226-E179-861C0668A3CA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4805760C-3BF9-C261-8925-D7D6BCC9B472" name="VISTORIA_IMOVEL">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>D31ECADA-48CA-E9CF-FE27-873872B0267F</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IMOVEL_COD_IMOVEL" id="DCD29785-A6C2-0C07-8B6D-63D0617F4DAC">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>87E58C53-DAF0-23E2-28F6-23C53AB593E3</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02990FC1-4734-06EC-30A0-AE73C2D199B1" referredColumn="37C68433-8D0A-35F7-0096-9287FA0B4C08"/>
+</associations>
+</Column>
+<Column name="COD_VISTORIA" id="3750798C-6F40-64D5-A93B-AAC50CA8AC93">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>281CF4F5-20EE-8213-C907-53934494C948</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_VISTORIA" id="0B132B1E-C079-3377-B59F-F734B185F4B8">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>1388B31E-42CB-7456-C5D1-C1E59EFA26E4</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONDICAO_IMOVEL_COD_COND" id="E746B7D7-8D10-E606-AEA6-16276608AE61">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>0CC1FBD7-2E93-CFB6-7BBC-39FDBDB553E3</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="643379EF-5E7B-BD7F-E623-9B4C095DD861" referredColumn="AF4F6EBF-7612-C120-43DF-CCDE54950510"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="95F7606A-504F-7A56-4216-ACD1B9806F88" name="VISTORIA_IMOVEL_PK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>492E7498-8FDA-3E52-5433-7059E8C40AB9</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCD29785-A6C2-0C07-8B6D-63D0617F4DAC"/>
+<colUsage columnID="3750798C-6F40-64D5-A93B-AAC50CA8AC93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="527DFB65-E636-2FFC-93E4-EB8F5DEB40B6" name="Vistoria_Imovel__IDX">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E1154AED-9CEE-59AE-CBC6-28011718C229</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E746B7D7-8D10-E606-AEA6-16276608AE61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AECD51C2-6986-2CB1-06B0-F2DCA2C3ADAE" name="VISTORIA_IMOVEL_CONDICAO_IMOVEL_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>E1154AED-9CEE-59AE-CBC6-28011718C229</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E746B7D7-8D10-E606-AEA6-16276608AE61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79494455-0DC2-D4EE-4D46-1BD274092669" name="VISTORIA_IMOVEL_IMOVEL_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>95CD0961-C76F-80A2-72B4-E65CDCBE6682</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCD29785-A6C2-0C07-8B6D-63D0617F4DAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

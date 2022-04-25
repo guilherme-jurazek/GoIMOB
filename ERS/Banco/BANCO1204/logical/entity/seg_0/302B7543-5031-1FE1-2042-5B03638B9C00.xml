@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="302B7543-5031-1FE1-2042-5B03638B9C00" name="Contrato">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="302B7543-5031-1FE1-2042-5B03638B9C00" name="CONTRATO">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:04:46 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
@@ -15,34 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="COD_ANUNCIO" id="82DA5768-784F-94EA-09D7-C4A93E8A678C">
-<createdBy>PORTABLE</createdBy>
-<createdTime>2022-03-09 16:04:58 UTC</createdTime>
-<generatorID>D62F9C7E-DEBF-EBBB-0A36-0903CB78D97D</generatorID>
-<ownerDesignName>BANCO1204</ownerDesignName>
-<engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
-</engineerTo>
-<referedAttribute>E02B0E0C-EAF8-1519-2F16-112B4F19503D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="COD_USU" id="445443C0-21BF-99B3-8B03-FAA8141E81EF">
-<createdBy>PORTABLE</createdBy>
-<createdTime>2022-03-09 16:05:16 UTC</createdTime>
-<generatorID>C5EB06DC-D3ED-7574-A832-07021417930D</generatorID>
-<ownerDesignName>BANCO1204</ownerDesignName>
-<engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
-</engineerTo>
-<referedAttribute>A9BDB66D-F7EA-177F-6C51-ACA8ED38BAE2</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="COD_CONTRATO" id="2955A390-2D8C-05AA-B8B9-F20FDF027C8B">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:05:26 UTC</createdTime>
@@ -121,14 +93,44 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="COD_ANUNCIO" id="82DA5768-784F-94EA-09D7-C4A93E8A678C">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:04:58 UTC</createdTime>
+<generatorID>D62F9C7E-DEBF-EBBB-0A36-0903CB78D97D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>E02B0E0C-EAF8-1519-2F16-112B4F19503D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_USU" id="445443C0-21BF-99B3-8B03-FAA8141E81EF">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:05:16 UTC</createdTime>
+<generatorID>C5EB06DC-D3ED-7574-A832-07021417930D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<referedAttribute>A9BDB66D-F7EA-177F-6C51-ACA8ED38BAE2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="8FA4E6FC-27EC-06E3-E34E-A95C11E244AD" name="Contrato PK">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:05:16 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

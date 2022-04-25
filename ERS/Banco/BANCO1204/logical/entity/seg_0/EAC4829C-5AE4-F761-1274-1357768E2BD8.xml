@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EAC4829C-5AE4-F761-1274-1357768E2BD8" name="Historico_Vistoria">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EAC4829C-5AE4-F761-1274-1357768E2BD8" name="HISTORICO_VISTORIA">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:13:33 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
@@ -29,7 +29,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="COD_COR" id="1556AD9E-1F5C-8CD2-CF83-BD281D87A085">
+<Attribute name="COD_CORRETORA" id="1556AD9E-1F5C-8CD2-CF83-BD281D87A085">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:13:53 UTC</createdTime>
 <generatorID>74DD73BF-42F2-3845-ED74-6DEAAB0DE044</generatorID>
@@ -43,7 +43,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="COD_IMOVEL" id="F48A3BAD-5E8D-4A27-5421-1E1C0BE2C9F2">
+<Attribute name="COD_IMO" id="F48A3BAD-5E8D-4A27-5421-1E1C0BE2C9F2">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:14:32 UTC</createdTime>
 <generatorID>86C5C117-1C2D-A6FD-4742-442ABFA7AC14</generatorID>
@@ -77,8 +77,9 @@
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:13:53 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

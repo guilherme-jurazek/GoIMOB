@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CAEF12BE-7DE7-8EFA-38E5-6B0A5C8616C8" containerWithKeyObject="301A5440-63A6-36E7-7E12-66071DF74CFC" localFKIndex="D4D11618-4DEA-1506-19CE-E5D40FD5FC76" name="USUARIO_FISICA_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>C53568A9-06E8-2CA8-9FB0-97F7DE50CC93</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D03FCFD0-96DA-948F-E535-68E49A4530D8</referredTableID>
+<keyObject>8BEA91EC-604A-4852-C362-75437F6B0748</keyObject>
+<referredKeyID>8BEA91EC-604A-4852-C362-75437F6B0748</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

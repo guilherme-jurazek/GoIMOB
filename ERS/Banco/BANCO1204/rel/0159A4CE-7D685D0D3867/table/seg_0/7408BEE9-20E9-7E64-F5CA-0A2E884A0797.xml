@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7408BEE9-20E9-7E64-F5CA-0A2E884A0797" name="CONTRATO">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>302B7543-5031-1FE1-2042-5B03638B9C00</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ANUNCIO_IMOVEL_COD_ANUNCIO" id="9676509E-EA1E-CAE9-F0F8-6ABEF798663F">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>82DA5768-784F-94EA-09D7-C4A93E8A678C</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6385A443-0E8F-3F61-911E-974B63EABEF7" referredColumn="8167C8ED-EC36-A27D-34CC-13157B7FCF09"/>
+</associations>
+</Column>
+<Column name="USUARIO_COD_USU" id="34C0CCE0-C13E-5378-C1B8-9CC11DF18D4D">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>445443C0-21BF-99B3-8B03-FAA8141E81EF</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="20C48AC8-0BE3-1F5A-20B8-55D73DA76B84" referredColumn="E41CD764-9A06-C9D0-4C98-0F2394E1BD98"/>
+</associations>
+</Column>
+<Column name="COD_CONTRATO" id="38C358F8-35B4-BE4F-A191-CA8A3F37D4CD">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>2955A390-2D8C-05AA-B8B9-F20FDF027C8B</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHAMENTO_CONTRATO" id="0F73CDF0-7F80-F8D4-8CAB-27D1CCE0DC80">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>9EB0BD81-390F-BE32-ABB5-08EEE281199B</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROPOSTA_CONTRATO" id="7897E8E0-3C78-40D9-CD4D-46620FD3C74A">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>FF9EDE8E-DC09-63CF-F78F-D0706D3E5495</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_INICIAL" id="AF0B6995-C79A-DE5D-38FC-8E61B0DF4C23">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>4C39DCB0-DB20-0995-E73F-DAD30D1C6E96</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_FINAL" id="19D2CFB5-5C52-BB82-F7B5-3816DC0B4E7B">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>3915545B-5914-9BC9-E47C-CA92ECFEAEE2</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATA_CANCELAMENTO_CONTRATO" id="55A8F6BE-6B12-8934-5483-45E8588E0057">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>3A34FF8A-C572-AD23-D129-FB0A40303445</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86041B88-9515-7DF4-8B34-DE0DFBC9DE7B" name="CONTRATO_PK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>8FA4E6FC-27EC-06E3-E34E-A95C11E244AD</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38C358F8-35B4-BE4F-A191-CA8A3F37D4CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="419A9978-BCEB-E783-DC0E-AFF5414B3F2D" name="Contrato__IDX">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D62F9C7E-DEBF-EBBB-0A36-0903CB78D97D</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="9676509E-EA1E-CAE9-F0F8-6ABEF798663F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62E7BC1B-3EF5-6514-FF85-1FD7E5151009" name="CONTRATO_ANUNCIO_IMOVEL_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>D62F9C7E-DEBF-EBBB-0A36-0903CB78D97D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9676509E-EA1E-CAE9-F0F8-6ABEF798663F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E788F058-3A42-2469-F6BA-6746C1AD4B6D" name="CONTRATO_USUARIO_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>C5EB06DC-D3ED-7574-A832-07021417930D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34C0CCE0-C13E-5378-C1B8-9CC11DF18D4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
