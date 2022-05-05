@@ -18,7 +18,7 @@ public class AlteraEmpresa implements ActionControl {
   public String exec (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     
 
-    System.out.println("Alterando empresa");
+    // System.out.println("Alterando empresa");
 		
 		String nomeEmpresa = request.getParameter("nome");
 		String paramDataEmpresa = request.getParameter("data");
@@ -33,7 +33,7 @@ public class AlteraEmpresa implements ActionControl {
 			throw new ServletException(e);
 		}
 		
-		System.out.println(id);
+		// System.out.println(id);
 		
 		Banco banco = new Banco();
 		Empresa empresa = banco.buscaEmpresaPelaId(id);

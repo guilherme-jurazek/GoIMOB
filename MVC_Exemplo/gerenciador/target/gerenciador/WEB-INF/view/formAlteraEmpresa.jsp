@@ -19,6 +19,6 @@
 		<input type="hidden" name="id" value="${ empresa.id }">
 		<input type="submit" />
 	</form>
-
+	<c:import url="logout.jsp" />
 </body>
 </html>

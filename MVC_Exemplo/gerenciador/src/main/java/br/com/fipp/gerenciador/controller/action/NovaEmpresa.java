@@ -15,7 +15,7 @@ import br.com.fipp.gerenciador.model.Empresa;
 public class NovaEmpresa implements ActionControl {
   
   public String exec(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    System.out.println("Cadastrando nova empresa");
+    // System.out.println("Cadastrando nova empresa");
 		
 		String nomeEmpresa = request.getParameter("nome");
 		String paramDataEmpresa = request.getParameter("data");

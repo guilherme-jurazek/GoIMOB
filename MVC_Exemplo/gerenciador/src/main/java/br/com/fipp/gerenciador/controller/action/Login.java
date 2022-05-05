@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import br.com.fipp.gerenciador.model.Banco;
 import br.com.fipp.gerenciador.model.User;
@@ -16,11 +17,17 @@ public class Login implements ActionControl {
     String login = request.getParameter("login");
     String pass = request.getParameter("pass");
 
-    System.out.println("Logando..." + login);
+    // System.out.println("Logando..." + login);
 
     Banco banco = new Banco();
     User user = banco.userIsValid(login, pass);
 
-    return user != null ? "redirect:ListaEmpresa" : "redirect:LoginForm";
+    if (user != null)
+    {
+      HttpSession sess = request.getSession();
+      sess.setAttribute("user_logged", user);
+      return "redirect:ListaEmpresa";
+    }
+    return "redirect:LoginForm";
   }
 }

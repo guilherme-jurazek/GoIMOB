@@ -16,6 +16,6 @@
 	
 		<input type="submit" />
 	</form>
-
+	<c:import url="logout.jsp" />
 </body>
 </html>

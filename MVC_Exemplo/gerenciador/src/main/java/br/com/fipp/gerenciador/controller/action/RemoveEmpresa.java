@@ -14,7 +14,7 @@ public class RemoveEmpresa implements ActionControl {
     String paramId = request.getParameter("id");
 		Integer id = Integer.valueOf(paramId);
 		
-		System.out.println(id);
+		// System.out.println(id);
 		
 		Banco banco = new Banco();
 		banco.removeEmpresa(id);

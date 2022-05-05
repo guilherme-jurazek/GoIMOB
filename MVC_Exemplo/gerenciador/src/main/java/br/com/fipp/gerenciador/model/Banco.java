@@ -22,7 +22,7 @@ public class Banco {
 		lista.add(empresa2);
 
 		// CREATE USERS
-		userList.add(new User("cebola", "37e44be8"));
+		userList.add(new User("cebola", "blabla"));
 		userList.add(new User("taveira", "12345678"));
 	}
 

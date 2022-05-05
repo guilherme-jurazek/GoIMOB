@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
   <display-name>gerenciador</display-name>
-  <welcome-file-list>
+  <!-- <welcome-file-list>
     <welcome-file>bem-vindo.html</welcome-file>
-  </welcome-file-list>
+  </welcome-file-list> -->
+
+
+  <!-- AQUI DEFINIMOS QUEM ATEM ACESSO LIBERADO A RECURSOS, SEM NECESSIDADE DE AUTENTICACAO -->
+  <!-- <login-config>
+    <auth-method>BASIC</auth-method>
+  </login-config>
+
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Controller Acess</web-resource-name>
+      <url-pattern>/</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>ADMINISTRATOR</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>Acess to HTML pages</web-resource-name>
+      <url-pattern>*.html</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>PUBLIC_USER</role-name>
+    </auth-constraint>
+  </security-constraint> -->
+
+
+  <!-- DEFININDO TEMPO DE SESSOES/COKKIES -->
+  <session-config>
+    <!-- 10 min -->
+    <session-timeout>10</session-timeout>
+  </session-config>
 </web-app>

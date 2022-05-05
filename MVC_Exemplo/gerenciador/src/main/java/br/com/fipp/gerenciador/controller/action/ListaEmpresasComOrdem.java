@@ -17,7 +17,7 @@ public class ListaEmpresasComOrdem implements ActionControl {
   public String exec(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
-    System.out.println("listando empresas em ordem alfabetica");
+    // System.out.println("listando empresas em ordem alfabetica");
 
     Banco banco = new Banco();
     List<Empresa> lista = banco.getEmpresas();
