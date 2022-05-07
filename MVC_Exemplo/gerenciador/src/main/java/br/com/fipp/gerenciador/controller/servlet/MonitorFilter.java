@@ -7,22 +7,22 @@ import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
-@WebFilter(urlPatterns = "/*")
+// @WebFilter(urlPatterns = "/*")
 public class MonitorFilter implements Filter{
 
   @Override
-  public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
-      throws IOException, ServletException {
+  public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
 
     //MEDINDO O TEMPO DE EXECUÇÃO
-    System.out.println("Filter started...");
-    System.out.print("Action: " + ((HttpServletRequest) req).getRequestURI().substring(13));
+    System.out.println("MonitorFilter started...");
+    String action = ((HttpServletRequest) req).getServletPath().substring(1);
+    System.out.println("Action: " + action);
     long before = System.currentTimeMillis(), after;
-    chain.doFilter(req, resp);
+    if (!action.equalsIgnoreCase("favicon.ico"))
+      chain.doFilter(req, resp);
     after = System.currentTimeMillis();
-    System.out.print("      ...Execution time: " + (after - before) + "\n\n");
+    System.out.println("MonitorFilter finish ...Execution time: " + (after - before) + "\n\n");
   }
 }

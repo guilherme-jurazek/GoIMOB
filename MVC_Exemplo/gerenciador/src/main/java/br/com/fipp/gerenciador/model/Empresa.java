@@ -6,8 +6,25 @@ public class Empresa {
 
 	private Integer id;
 	private String nome;
+	private String satisfacao;
 	private Date dataAbertura = new Date();
 	
+	
+	
+	public String getSatisfacao() {
+		return satisfacao;
+	}
+	public void setSatisfacao(String satisfacao) {
+		this.satisfacao = satisfacao;
+	}
+	
+	public Empresa() {
+	}
+	public Empresa(Integer id, String nome, String satisfacao) {
+		this.id = id;
+		this.nome = nome;
+		this.satisfacao = satisfacao;
+	}
 	public Integer getId() {
 		return id;
 	}

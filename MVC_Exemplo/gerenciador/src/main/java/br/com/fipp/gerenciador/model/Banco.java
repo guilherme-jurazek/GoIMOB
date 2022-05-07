@@ -12,18 +12,16 @@ public class Banco {
 	private static Integer chaveSequencial = 1;
 
 	static {
-		Empresa empresa = new Empresa();
-		empresa.setId(chaveSequencial++);
-		empresa.setNome("FACEBOOK");
-		Empresa empresa2 = new Empresa();
-		empresa2.setId(chaveSequencial++);
-		empresa2.setNome("GOOGLE");
-		lista.add(empresa);
-		lista.add(empresa2);
+		
+		lista.add(new Empresa(chaveSequencial++, "Facebook", "50%"));
+		lista.add(new Empresa(chaveSequencial++, "Google", "65%"));
+		lista.add(new Empresa(chaveSequencial++, "Toninho LTDA", "70%"));
+		lista.add(new Empresa(chaveSequencial++, "GO SIMULADOS", "300% TOP DAS GALAXYA!!!"));
 
 		// CREATE USERS
 		userList.add(new User("cebola", "blabla"));
 		userList.add(new User("taveira", "12345678"));
+		userList.add(new User("erm", "12345678"));
 	}
 
 	public void adiciona(Empresa empresa) {
