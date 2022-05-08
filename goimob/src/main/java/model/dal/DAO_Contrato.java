@@ -1,4 +1,4 @@
-package model.database.entity;
+package model.dal;
 
 public class DAO_Contrato {
   

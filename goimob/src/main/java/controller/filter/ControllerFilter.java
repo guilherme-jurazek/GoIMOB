@@ -11,7 +11,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.action.ActionControl;
+import controller.action.iActionControl;
 
 // @WebServlet(urlPatterns = "/")
 public class ControllerFilter implements Filter {
@@ -31,7 +31,7 @@ public class ControllerFilter implements Filter {
     try {
       String className = "controller.action." + paramAction;
       Class<?> controlClass = Class.forName(className);
-      ActionControl act = (ActionControl) controlClass.newInstance();
+      iActionControl act = (iActionControl) controlClass.newInstance();
       res = act.exec(request, response);
     } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
       System.out.println(e.toString());
