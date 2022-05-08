@@ -5,10 +5,9 @@ import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import controller.iAction;
 
-public class Usuario implements iAction {
+public class Login implements iAction {
   /**
    * CLASSES DE AÇÃO OU COMMAND
    * 
@@ -44,6 +43,7 @@ public class Usuario implements iAction {
   @Override
   public String exec(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+
     switch (request.getMethod()) {
 
       case "POST":
@@ -52,6 +52,28 @@ public class Usuario implements iAction {
 
       case "GET":
         // REGRA AQUI
+
+        String login = request.getParameter("login");
+        String pass = request.getParameter("pass");
+
+        
+        /**
+         * utiliza os objetos DAO_Usuario junto à
+         * entidade Usuario para validar usuario
+         */
+
+
+        //if (/*user != null*/ )
+        //{
+          /**
+           * Obtem a sessao e pindura user_logged
+           * passando a string nome de usuario user.
+           */
+          // HttpSession sess = request.getSession();
+          // sess.setAttribute("user_logged", "muck" /*user*/);
+          // return "redirect:ListaEmpresa";
+        //}
+        
         break;
 
       case "PUT":
@@ -63,10 +85,9 @@ public class Usuario implements iAction {
         break;
 
       default:
-        // CÓDIGO PARA QUANDO ESSA CLASE NÃO ATENDE O MÉTODO REQUISITADO
+        // CÓDIGO PARA QUANDO ESSA CLASE NÃO ATENDE O MÉTODO REQUISITADO.
     }
 
-    
     /**
      * RETORNO DO COMMAND.
      * 

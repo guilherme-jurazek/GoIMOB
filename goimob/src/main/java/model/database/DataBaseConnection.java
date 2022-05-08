@@ -9,6 +9,20 @@ import java.sql.Statement;
 import config.VARS;
 
 public class DataBaseConnection {
+
+  /**
+   * CLASSE DataBaseConnection
+   * 
+   * Essa classe será responsável por fazer a conexão direta
+   * com o banco, será nela que as configurações de acesso,
+   * manipulção do driver, autenticação com o SGBD sarão definidas
+   * e métodos serão criados para prover uma abstração para
+   * as camadas superiores que à utilizarão, como a DAL, e
+   * posteriormente as ENTITIES seguido de view.
+   * 
+   * ATENÇÃO: CLASSE INCOMPLETA!
+   */
+
   ResultSet rs;
   private Connection conn;
   private String lastOpMsgError;

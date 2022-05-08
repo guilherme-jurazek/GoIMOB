@@ -1,6 +1,5 @@
 package controller.filter;
 
-
 import java.io.IOException;
 
 import javax.servlet.Filter;
@@ -11,15 +10,20 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.action.iActionControl;
+import controller.iAction;
 
 // @WebServlet(urlPatterns = "/")
 public class ControllerFilter implements Filter {
 
-
   @Override
   public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws IOException, ServletException {
-    
+
+    /**
+     * CLASSE ControllerFilter
+     * 
+     * Classe reponsavel por receber a URI instanciar
+     * o objeto de desejo de acordo com essa URI
+     */
 
     System.out.println("ControllerFilter started...");
     HttpServletRequest request = (HttpServletRequest) req;
@@ -31,16 +35,28 @@ public class ControllerFilter implements Filter {
     try {
       String className = "controller.action." + paramAction;
       Class<?> controlClass = Class.forName(className);
-      iActionControl act = (iActionControl) controlClass.newInstance();
+      iAction act = (iAction) controlClass.newInstance();
       res = act.exec(request, response);
     } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
       System.out.println(e.toString());
+      /**
+        * TRATAR URI ERRADA, VAI LANCAR EXCECÃO NA CLASSE, AQUI
+        * TEM QUE SER FEITO O REDIRECIONADO PARA UMA PÁGINA DE ERRO OU
+        * QUALQUER PÁGINA QUE DESEJAMOS QUE O USUÁRIO VEJA, QUANDO
+        * ELE FIZER UMA REQUISIÇÃO A UM RECURSO INEXISTENTE, OU MESMO
+        * ERRAR O NOME DA REQUISIÇÃO.
 
-      //TRATAR URI ERRADA, VAI LANCAR EXCECAO NA CLASSE, AQUI TEM QUE SER REDIRECIONADO PARA UMA PAGINA DE ERRO
-      //caso de erro no recurso chamado
-      //  com usuario logado: pagina com o codigo do erro, opcao para retornar para o dashboard
-      //  com usuario deslogado: pagina com o codigo do erro, opcao para retornar para pagina de logon
-      // res = request.getSession().getAttribute("user_logged") == null ? "redirect:LoginForm" : "redirect:ListaEmpresa";
+        * Caso de acontece essa exceção:
+
+        * Com o usuário logado: redireciona para página com o código do erro
+        * ou qualquer outra, opção para retornar para o dashboard.
+        * Com usuário deslogado: redirecionar para a página com o código do erro ou
+        * qualquer outra, opção para retornar para página de login
+        * ou página inicial.
+        */
+
+      // remover "user_logged" pois a etapa de autorização é de resposabilidade de AuthorizationFilter.
+      res = request.getSession().getAttribute("user_logged") == null ? "redirect:LoginForm" : "redirect:ListaEmpresa";
     }
 
     String path[] = res.split(":");
@@ -48,16 +64,16 @@ public class ControllerFilter implements Filter {
 
       switch (path[0]) {
 
-        case "forward" :
+        case "forward":
           request.getRequestDispatcher(path[1]).forward(request, response);
           break;
 
-        case "redirect" :
+        case "redirect":
           response.sendRedirect(path[1]);
           break;
 
         default:
-          System.out.println("No return");
+          // CÓDIGO PARA QUANDO O TIPO DE RESPOSTA É INVÁLIDO.
       }
     }
     System.out.println("ControllerFilter finish...");

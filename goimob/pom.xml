@@ -74,6 +74,11 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.10.1</version>
+
+          <!-- <configuration>
+            <release>11</release>
+          </configuration> -->
+
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
@@ -83,7 +88,14 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>3.3.2</version>
           <configuration>
+
+            <!-- DIRETORIO DE DEPLOY VICTOR -->
             <outputDirectory>/opt/tomcat/webapps/</outputDirectory>
+
+            <!-- DIRETORIO DE DEPLOY MUCK -->
+            <!-- <outputDirectory>C://</outputDirectory> -->
+
+
           </configuration>
         </plugin>
         <plugin>
