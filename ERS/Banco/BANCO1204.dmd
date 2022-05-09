@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BANCO1204" id="14E0D76D-27BE-EB87-7DC3-F3535CC26A5B" version="3.5">
-<createdBy>mateu</createdBy>
-<createdTime>2022-03-06 20:07:13 UTC</createdTime>
-<ownerDesignName>TrabENGSOFT2</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>14E0D76D-27BE-EB87-7DC3-F3535CC26A5B</designId>
-</OSDM_Design>
