@@ -1,0 +1,107 @@
+*{
+    font-family: 'Ruluko', sans-serif;
+}
+
+/* ========= HEADER ========= */
+.nav-text-style{
+    font-size: 24px;
+    margin-right: 50px;
+    font-weight: 500;
+}
+
+.nav-text-style:hover{
+    font-weight: 600;
+    color: #000;  
+}
+/* ====X==== HEADER ====X==== */
+
+/* ========= BACKGROUND BODY ========= */
+.bg-image-login{
+    background-image: url("Assets/BackgroundLogin.png");
+    height: 787px;
+    width: 101%;
+    background-size: cover;
+    position:absolute;
+    margin-top: 80px;
+    padding-top: 60px
+}
+/* ====X==== BACKGROUND BODY ====X==== */
+
+
+/* ========= FORMULARIO ========= */
+.containter-login{
+    background-color: #0C2A57;
+    height: 675px;
+    width: 600px;
+    opacity: 0.77;
+    border-radius: 45px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px
+}
+.text-form{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.text-modal{
+    color: #BABABA;
+}
+.tittle-login{
+    color: white;
+    font-size: 45px;
+}
+.form-login{
+    align-items: center
+
+}
+.input-form{
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 300px;
+    font-size: 18px;
+}
+.input-form:focus{
+    outline: none;
+}
+.btn-login{
+    background-color: #5CF4BD;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 120px;
+    font-size: 30px;
+}
+.btn-login:hover{
+    background-color: #5CDABD;
+}
+.btn-reg{
+    background-color: #D8FFD4;
+    margin-top: 5px;
+    border-radius: 20px;
+    width: 140px;
+    font-size: 25px;
+}
+.btn-reg:hover{
+    background-color: #D8DFD4;
+}
+.img-google{
+    margin-right: 15px;
+    margin-bottom:15px;
+}
+.img-face{
+    margin-bottom:15px;
+}
+.img-google:hover{
+    cursor: pointer;
+}
+.img-face:hover{
+    cursor: pointer;
+}
+/* ====X==== FORMULARIO ====X==== */
+
+/* ========= FOOTER ========= */
+.footer-imob{
+
+}
+/* ====X==== FOOTER ====X==== */

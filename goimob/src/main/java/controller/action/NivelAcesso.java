@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import controller.iAction;
 
-public class Usuario implements iAction {
+public class NivelAcesso implements iAction {
   /**
    * CLASSES DE AÇÃO OU COMMAND
    * 
@@ -41,32 +41,32 @@ public class Usuario implements iAction {
    * por tanto, não se trata de uma limitação de tecnologia, e sim de uma convenção
    * podendo ser personalizado.
    */
+
   @Override
   public String exec(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+   
     switch (request.getMethod()) {
 
       case "POST":
-        // REGRA AQUI
+        // REGRA AQUI.
         break;
 
       case "GET":
-        // REGRA AQUI
+        // REGRA AQUI.
         break;
 
       case "PUT":
-        // REGRA AQUI
+        // REGRA AQUI.
         break;
 
       case "DELETE":
-        // REGRA AQUI
+        // REGRA AQUI.
         break;
 
       default:
-        // CÓDIGO PARA QUANDO ESSA CLASE NÃO ATENDE O MÉTODO REQUISITADO
+        // CÓDIGO PARA QUANDO ESSA CLASE NÃO ATENDE O MÉTODO REQUISITADO.
     }
 
-    
     /**
      * RETORNO DO COMMAND.
      * 
@@ -76,5 +76,4 @@ public class Usuario implements iAction {
      */
     return "redirect:algumLugar";
   }
-  
 }
