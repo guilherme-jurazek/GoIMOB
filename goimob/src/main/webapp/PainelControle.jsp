@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -28,7 +27,6 @@
             
             padding-left: 25px;
             justify-content: flex-end;
-
             margin: 0 auto;
         }
         .tittle-usu{
@@ -58,6 +56,10 @@
             border: none;
             margin-top: 20px;
             font-size: 24px;
+        }
+        
+        .editar-perfil:hover{
+            background-color: #7f99Df;
         }
         .container-princ-info{
             text-align: center;
@@ -97,13 +99,29 @@
             border-radius: 20px;
             padding: 10px;
         }
+        .table-background-imoveis{
+            margin-top: 20px;
+            background-color: #F8FFF8;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .tr-effect{
+            transition: 0.5s;
+            border-radius: 3px;
+        }
+        .tr-effect:hover{
+            cursor: pointer;
+            box-shadow: 4px 2px 15px 1px black;
+            border-collapse: collapse;
+        }
         /* ====X==== INFORMACOES PERFIL ====X==== */
     </style>
 </head>
 <body>
     <%-- ==============  HEADER ============== --%>
     <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
-        <a class="navbar-brand" href="#"><img src="Assets/Logo.png" style="width: 175px; margin-left: 20px"> </a>
+        <a class="navbar-brand" href="index.jsp"><img src="Assets/Logo.png" style="width: 175px; margin-left: 20px"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -144,7 +162,57 @@
                 <button class="editar-perfil">Editar Perfil</button>
             </div>
             <div>
-                
+                <div class="container-info-dinamic table-background-imoveis">
+                    <div class="functions">
+                        <a href="GerarContrato.jsp"><button class="btn-op">Cadastrar novo Anúncio</button></a>
+                        <a href=""><button class="btn-op">Filtros</button></a>
+                        <a href=""><button class="btn-op">Ordenar </button></a>
+                        <div style="text-align: right; margin:0 auto;">
+                            <p class="tittle-table">Imóveis anunciados pelo corretor</p>
+                        </div>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th>Nome Cliente</th>
+                                <th>Valor Imóvel</th>
+                                <th>Taxa Corretor</th>
+                                <th>Em aberto?</th>
+                                <th>Data Contrato</th>
+                                <th>Tipo Contrato</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="tr-effect">
+                                <td>Cássia</td>
+                                <td>R$250.000</td>
+                                <td>14%</td>
+                                <td>Sim</td>
+                                <td>15/01/2012</td>
+                                <td>Venda</td>
+                              </tr>
+                              <tr class="tr-effect">
+                                <td>Mary</td>
+                                <td>R$850.000</td>
+                                <td>12%</td>
+                                <td>Não</td>
+                                <td>15/08/2018</td>
+                                <td>Venda</td>
+                              </tr>
+                              <tr class="tr-effect">
+                                <td>July</td>
+                                <td>R$2.000</td>
+                                <td>2%</td>
+                                <td>Não</td>
+                                <td>12/05/2022</td>
+                                <td>Aluguel</td>
+
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div> 
         
@@ -172,7 +240,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
+                          <tr class="tr-effect">
                             <td>Cássia</td>
                             <td>R$250.000</td>
                             <td>14%</td>
@@ -180,7 +248,7 @@
                             <td>15/01/2012</td>
                             <td>Venda</td>
                           </tr>
-                          <tr>
+                          <tr class="tr-effect">
                             <td>Mary</td>
                             <td>R$850.000</td>
                             <td>12%</td>
@@ -188,7 +256,7 @@
                             <td>15/08/2018</td>
                             <td>Venda</td>
                           </tr>
-                          <tr>
+                          <tr class="tr-effect">
                             <td>July</td>
                             <td>R$2.000</td>
                             <td>2%</td>
@@ -225,15 +293,19 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>Cássia</td>
-                            <td>R$250.000</td>
-                            <td>14%</td>
-                            <td>Sim</td>
-                            <td>15/01/2012</td>
-                            <td>Venda</td>
-                          </tr>
-                          <tr>
+                            <a href="index.jsp" style="editar-imovel">
+                                <tr class="tr-effect">
+                                    
+                                    <td>Cássia</td>
+                                    <td>R$250.000</td>
+                                    <td>14%</td>
+                                    <td>Sim</td>
+                                    <td>15/01/2012</td>
+                                    <td>Venda</td>
+                                   
+                                </tr>
+                             </a>
+                          <tr class="tr-effect">
                             <td>Mary</td>
                             <td>R$850.000</td>
                             <td>12%</td>
@@ -241,7 +313,7 @@
                             <td>15/08/2018</td>
                             <td>Venda</td>
                           </tr>
-                          <tr>
+                          <tr class="tr-effect">
                             <td>July</td>
                             <td>R$2.000</td>
                             <td>2%</td>
@@ -266,4 +338,4 @@
     </div>
     <%-- =====XXX======  FOOTER =====XXX====== --%>
 </body>
-</html>
+</html> 
