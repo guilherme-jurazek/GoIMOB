@@ -1,4 +1,4 @@
-package controller;
+package control.action;
 
 
 import java.io.IOException;
@@ -7,9 +7,11 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import control.ControlObj;
+
 public interface iAction {
 
-  String exec (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+  ControlObj exec (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
   
   /**
    * Essa é a classe de interface

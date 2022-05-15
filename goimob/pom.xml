@@ -26,6 +26,11 @@
       <version>21.5.0.0</version>
     </dependency>
 
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.29</version>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>
@@ -84,6 +89,7 @@
           <version>3.3.2</version>
           <configuration>
             <!-- <outputDirectory>/opt/tomcat/webapps/</outputDirectory> -->
+            <!-- <outputDirectory>/home/cebola/.apache-tomcat-9.0.62/webapps/</outputDirectory> -->
             <outputDirectory>C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps</outputDirectory>
           </configuration>
         </plugin>

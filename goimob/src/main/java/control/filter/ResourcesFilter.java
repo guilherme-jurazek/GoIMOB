@@ -1,4 +1,5 @@
-package controller.filter;
+package control.filter;
+
 
 import java.io.IOException;
 
@@ -10,7 +11,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class AuthorizationFilter implements Filter {
+public class ResourcesFilter implements Filter {
 
   /**
    * OQUE É A CLASSE AuthorizationFilter ?
@@ -20,7 +21,7 @@ public class AuthorizationFilter implements Filter {
    * usada para primeiramente, verificar se o usúario do sistema
    * está registrado, por meio da sessão, a sessão só
    * pode ser válida se o atributo "user_logged" está definido na
-   * sessão, essa atribuição é realizada pela classe de controle 
+   * sessão, essa atribuição é realizada pela classe de controle
    * "Login" de dentro da pasta "action", caso contrário, AuthorizationFilter
    * impede que o user-agent acesse qualquer recurso da aplicação diferente
    * de Login e LoginForm.
@@ -28,28 +29,14 @@ public class AuthorizationFilter implements Filter {
 
   @Override
   public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-    
-    System.out.println("AuthorizationFilter started...");
+
+    System.out.println("ResourcesFilter started...");
 
     HttpServletRequest req = (HttpServletRequest) request;
     HttpServletResponse resp = (HttpServletResponse) response;
 
-    String paramAction =  req.getServletPath().substring(1);
-
-    if(req.getSession().getAttribute("user_logged") == null && !paramAction.equalsIgnoreCase("Login") && !paramAction.equalsIgnoreCase("LoginForm"))
-    {
-      // há uma possibilidade de repassar essa requisição para 
-      // o EndPoint da pasta action chamar a página de login.
-      resp.sendRedirect("LoginForm");
-      System.out.println("Autentication request started...");
-      System.out.println("AuthorizationFilter finish...");
-      return;
-    }
-      
-    System.out.println("the user has been authorized!");
-    chain.doFilter(req, resp);
-    System.out.println("AuthorizationFilter finish...");
+    
+    req.getRequestDispatcher("/WEB-INF" + req.getServletPath()).forward(req, resp);
 
   }
-  
 }

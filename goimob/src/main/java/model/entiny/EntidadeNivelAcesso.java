@@ -1,6 +1,6 @@
 package model.entiny;
 
-public class NivelAcesso {
+public class EntidadeNivelAcesso {
   /**
    * NÍVEL DE ACESSO DO USUÁRIO
    */

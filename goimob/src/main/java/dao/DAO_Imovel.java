@@ -1,4 +1,4 @@
-package model.dal;
+package dao;
 
 public class DAO_Imovel {
   

@@ -1,8 +1,11 @@
 package config;
 
+import com.google.gson.Gson;
+
 public class VARS {
-  
-  public static final String DBURL = "jdbc:oracle:thin:@177.131.33.17:1521:XE";
-  public static final String DBUSER = "261911759";
-  public static final String DBPASS = "261911759";
+  private static final String DBSCHEMA = "db_goimob";
+  public static final String DBURL = "jdbc:mysql://localhost:3306/" + DBSCHEMA;
+  public static final String DBUSER = "root";
+  public static final String DBPASS = "nl?d4XTj$(aH";
+  public static final Gson gson = new Gson();
 }

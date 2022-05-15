@@ -1,4 +1,4 @@
-package controller.filter;
+package control.filter;
 
 import java.io.IOException;
 
@@ -10,7 +10,8 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import controller.iAction;
+import control.ControlObj;
+import control.action.iAction;
 
 // @WebServlet(urlPatterns = "/")
 public class ControllerFilter implements Filter {
@@ -29,47 +30,36 @@ public class ControllerFilter implements Filter {
     HttpServletRequest request = (HttpServletRequest) req;
     HttpServletResponse response = (HttpServletResponse) resp;
 
-    String res = "";
-    String paramAction = request.getServletPath().substring(1);
+    ControlObj res = null;
 
     try {
-      String className = "controller.action." + paramAction;
+      String className = "control.action." + request.getParameter("action");
       Class<?> controlClass = Class.forName(className);
       iAction act = (iAction) controlClass.newInstance();
       res = act.exec(request, response);
     } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
       System.out.println(e.toString());
-      /**
-        * TRATAR URI ERRADA, VAI LANCAR EXCECÃO NA CLASSE, AQUI
-        * TEM QUE SER FEITO O REDIRECIONADO PARA UMA PÁGINA DE ERRO OU
-        * QUALQUER PÁGINA QUE DESEJAMOS QUE O USUÁRIO VEJA, QUANDO
-        * ELE FIZER UMA REQUISIÇÃO A UM RECURSO INEXISTENTE, OU MESMO
-        * ERRAR O NOME DA REQUISIÇÃO.
-
-        * Caso de acontece essa exceção:
-
-        * Com o usuário logado: redireciona para página com o código do erro
-        * ou qualquer outra, opção para retornar para o dashboard.
-        * Com usuário deslogado: redirecionar para a página com o código do erro ou
-        * qualquer outra, opção para retornar para página de login
-        * ou página inicial.
-        */
-
-      // remover "user_logged" pois a etapa de autorização é de resposabilidade de AuthorizationFilter.
-      res = request.getSession().getAttribute("user_logged") == null ? "redirect:LoginForm" : "redirect:ListaEmpresa";
     }
 
-    String path[] = res.split(":");
-    if (path != null && path.length > 1) {
-
-      switch (path[0]) {
+    if (res != null) {
+      switch (res.getMethod()) {
 
         case "forward":
-          request.getRequestDispatcher(path[1]).forward(request, response);
+          request.getRequestDispatcher(res.getResource()).forward(request, response);
           break;
 
         case "redirect":
-          response.sendRedirect(path[1]);
+          response.sendRedirect(res.getResource());
+          break;
+
+        case "json":
+          resp.setContentType("application/json");
+          resp.getWriter().println(res.getResource());
+          break;
+
+        case "xml":
+          resp.setContentType("application/xml");
+          resp.getWriter().print(res.getResource());
           break;
 
         default:
@@ -78,4 +68,7 @@ public class ControllerFilter implements Filter {
     }
     System.out.println("ControllerFilter finish...");
   }
+
+  
 }
+
