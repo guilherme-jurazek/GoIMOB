@@ -8,7 +8,7 @@ Projeto de sistema dedicado a gestão de processos no setor imobiliário
 
 Esse projeto é mantido pelos colaboradores:
 
-| [![](https://github.com/rennealmeida)](https://github.com/rennealmeida) | [![](https://github.com/beept.png?size=150)](https://github.com/beept) | [![](https://github.com/guilherme-jurazek.png?size=150)](https://github.com/guilherme-jurazek) |
+| [![](https://github.com/rennealmeida)](https://github.com/rennealmeida) | [![](https://github.com/vrodriguex.png?size=150)](https://github.com/beept) | [![](https://github.com/guilherme-jurazek.png?size=150)](https://github.com/guilherme-jurazek) |
 | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------: |
 |            [Renne Almeida](https://github.com/rennealmeida)             |              [Victor Rodriguez](https://github.com/beept)              |                   [Guilherme Jurazek](https://github.com/guilherme-jurazek)                    |
 
