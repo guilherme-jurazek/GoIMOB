@@ -6,17 +6,26 @@ import java.sql.SQLException;
 
 public abstract class GenericDAO {
   
-  public static void create (Connection con, String createSQL, Object... parametros) {
+  public static PreparedStatement create (Connection con, String createSQL, Object... parametros) {
     try {
-      PreparedStatement pstmt = con.prepareStatement(createSQL);
+      PreparedStatement pstmt = con.prepareStatement(createSQL, PreparedStatement.RETURN_GENERATED_KEYS);
+        
       for (int i = 0; i < parametros.length; i++) {
         pstmt.setObject(i + 1, parametros[i]);
       }
       pstmt.execute();
-      pstmt.close();
+      // ResultSet rs = pstmt.getGeneratedKeys();
+      // rs.next();
+      // System.out.println("Id: " + rs.getInt(1));
+      // System.out.println("Data: " + rs.getObject(4));
+      // System.out.println("Commit effectived!");
+      
+      return pstmt;
+
     } catch (SQLException e) {
-      e.printStackTrace();
-    } 
+      System.out.println("Erro: " + e.toString());
+      throw new RuntimeException(e);
+    }
   };
 
   public void read (String sql, Object... parametros) {};

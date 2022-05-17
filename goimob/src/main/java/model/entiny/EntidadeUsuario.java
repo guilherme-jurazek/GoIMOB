@@ -1,42 +1,27 @@
 package model.entiny;
 
 import java.sql.Connection;
-import java.util.Calendar;
+import java.sql.SQLException;
+
+import dao.DAO_Usuario;
 
 public class EntidadeUsuario extends EntidadePessoaFisica {
   
-  int codUsu;
-  Calendar dataCadastro;
-  int codNivelAcesso;
+  String email;
   String senha;
+  int codNivelAcesso;
+
+  public EntidadeUsuario() {}
   
-
-
-  // public EntidadeUsuario(String nome, String telefone1, String telefone2, Calendar dataNascimento, String email,
-  //     String rua, String bairro, int num, String cEP, String uF, String cidade, int cod, String cPF, Character sexo,
-  //     int codUsu, Calendar dataCadastro, int codNivelAcesso, String senha) {
-  //   super(nome, telefone1, telefone2, dataNascimento, email, rua, bairro, num, cEP, uF, cidade, cod, cPF, sexo);
-  //   this.codUsu = codUsu;
-  //   this.dataCadastro = dataCadastro;
-  //   this.codNivelAcesso = codNivelAcesso;
-  //   this.senha = senha;
-  // }
-
-  public EntidadeUsuario(int cod, String cPF, Character sexo, int codUsu, Calendar dataCadastro, int codNivelAcesso,
-      String senha) {
-    super(cod, cPF, sexo);
-    this.codUsu = codUsu;
-    this.dataCadastro = dataCadastro;
-    this.codNivelAcesso = codNivelAcesso;
-    this.senha = senha;
+  public String getEmail() {
+    return email;
   }
 
-  public EntidadeUsuario(int codUsu, Calendar dataCadastro, int codNivelAcesso, String senha) {
-    this.codUsu = codUsu;
-    this.dataCadastro = dataCadastro;
-    this.codNivelAcesso = codNivelAcesso;
-    this.senha = senha;
+
+  public void setEmail(String email) {
+    this.email = email;
   }
+
 
   public String getSenha() {
     return senha;
@@ -45,24 +30,7 @@ public class EntidadeUsuario extends EntidadePessoaFisica {
   public void setSenha(String senha) {
     this.senha = senha;
   }
-
-  public EntidadeUsuario() {
-
-  }
   
-  public int getCodUsu() {
-    return codUsu;
-  }
-
-  public void setCodUsu(int codUsu) {
-    this.codUsu = codUsu;
-  }
-  public Calendar getDataCadastro() {
-    return dataCadastro;
-  }
-  public void setDataCadastro(Calendar dataCadastro) {
-    this.dataCadastro = dataCadastro;
-  }
   public int getCodNivelAcesso() {
     return codNivelAcesso;
   }
@@ -70,9 +38,8 @@ public class EntidadeUsuario extends EntidadePessoaFisica {
     this.codNivelAcesso = codNivelAcesso;
   }
 
-  public static boolean salvar(Connection conn,EntidadeUsuario usu)
-  {
 
-    return true;
+  public void salvarUsuario(Connection conn) throws SQLException {
+    DAO_Usuario.salvar(conn, this);
   }
 }

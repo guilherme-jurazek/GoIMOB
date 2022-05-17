@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import control.ControlObj;
 import database.DataBaseConnection;
-import model.entiny.EntidadePessoa;
+import model.entiny.EntidadeUsuario;
 
 public class Pessoa implements iAction {
 
@@ -26,31 +26,69 @@ public class Pessoa implements iAction {
 
         try (Connection conn = new DataBaseConnection().getConnection())
         {
-          String nome = request.getParameter("nome");
-          String dataNascimento = request.getParameter("data_nasc");
-          String rua = request.getParameter("rua");
-          String bairro = request.getParameter("bairro");
-          String num = request.getParameter("num");
-          String cep = request.getParameter("cep");
+          ///// Entidade Pessoa /////
+          String nome = request.getParameter("name"); //ok
+          String dataNascimento = request.getParameter("data_nasc"); dataNascimento = "1998-09-18"; //Faltando
+          String cep = request.getParameter("cep"); //Ok
+          String num = request.getParameter("nresidencia"); //Ok
+          
+          /* parametros que serão obtidos por API */
           String uf = request.getParameter("uf");
           String cidade = request.getParameter("cidade");
-          
-          EntidadePessoa pes = new EntidadePessoa();
+          String bairro = request.getParameter("bairro");
+          String rua = request.getParameter("rua");
+          uf = "SP";
+          cidade = "Nantes";
+          bairro = "Centro";
+          rua = "Siqueira";
+          /* parametros que serão obtidos por API */
 
-          pes.setNome(nome);
-          pes.setDataNascimento(dataNascimento);
-          pes.setRua(rua);
-          pes.setBairro(bairro);
-          pes.setNum(num);
-          pes.setCEP(cep);
-          pes.setUF(uf);
-          pes.setCidade(cidade);
+          //--------------------------------
 
-          pes.salvar(conn);
+          ///// Entidade Pessoa Fisica /////
+          String cpf = request.getParameter("cpf");  //Ok
+          String sexo = request.getParameter("sexo"); //Ok
+          //--------------------------------
+
+          ///// Entidade Usuario /////
+          String email = request.getParameter("email"); //Ok
+          String senha = request.getParameter("senha"); //Ok
+          //--------------------------------
+
+          EntidadeUsuario usu = new EntidadeUsuario();
+
+          ///// Entidade Pessoa /////
+          usu.setNome(nome);
+          usu.setDataNascimento(dataNascimento);
+          usu.setRua(rua);
+          usu.setBairro(bairro);
+          usu.setNum(num);
+          usu.setCEP(cep);
+          usu.setUF(uf);
+          usu.setCidade(cidade);
+
+          ///// Entidade Pessoa Fisica /////
+          usu.setCPF(cpf);
+          usu.setSexo(sexo);
+
+          ///// Entidade Usuario /////
+          usu.setEmail(email);
+          usu.setSenha(senha);
+
+          usu.salvarPessoa(conn);
+
+
+          //Mover para acao pessoa fisica.
+          usu.salvarPessoaFisica(conn);
+
+          //Mover para achao pessoa usuario.
+          usu.salvarUsuario(conn);
+
           conn.close();
 
-          retorno.setMethod("json");
-          retorno.setResource("Deu certo porra!");
+          //setar volta
+          retorno.setMethod("forward");
+          retorno.setResource("PessoaFisica");
 
         } catch (SQLException e) {
           e.printStackTrace();
@@ -73,15 +111,6 @@ public class Pessoa implements iAction {
       default:
         // CÓDIGO PARA QUANDO ESSA CLASE NÃO ATENDE O MÉTODO REQUISITADO
     }
-
-    /**
-     * RETORNO DO COMMAND.
-     * 
-     * após a classe action executar sua tarefa, ele tem que retornar
-     * para o ControllerFilter com um redirect, ou forward, cada qual
-     * com suas características a depender do fluxo.
-     */
-    
     return retorno;
   }
 

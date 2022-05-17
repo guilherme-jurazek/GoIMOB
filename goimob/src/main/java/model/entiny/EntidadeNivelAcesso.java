@@ -7,4 +7,11 @@ public class EntidadeNivelAcesso {
   int codNivelAcesso;
   String descricaoNivelAcesso;
 
+
+  public static int getQtdeNivelAcesso()
+  {
+
+    
+    return 1;
+  }
 }

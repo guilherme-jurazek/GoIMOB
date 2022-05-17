@@ -29,11 +29,12 @@ public class ControllerFilter implements Filter {
     System.out.println("ControllerFilter started...");
     HttpServletRequest request = (HttpServletRequest) req;
     HttpServletResponse response = (HttpServletResponse) resp;
-
+    
     ControlObj res = null;
 
     try {
-      String className = "control.action." + request.getParameter("action");
+      String action = Character.toUpperCase(request.getParameter("action").charAt(0)) + request.getParameter("action").substring(1);
+      String className = "control.action." + action;
       Class<?> controlClass = Class.forName(className);
       iAction act = (iAction) controlClass.newInstance();
       res = act.exec(request, response);

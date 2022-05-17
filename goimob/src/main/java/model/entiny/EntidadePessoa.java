@@ -1,6 +1,7 @@
 package model.entiny;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -8,10 +9,10 @@ import dao.DAO_Pessoa;
 
 public class EntidadePessoa {
 
-  private int codPes; //GERADOS PELO BANCO, ESTUDAR CLASSE SQL PARA VER SE TEM COMO DEVOLVER O VALOR
+  private int codPes; // GERADOS PELO BANCO, ESTUDAR CLASSE SQL PARA VER SE TEM COMO DEVOLVER O VALOR
   private String nome;
   private LocalDate dataNascimento;
-  private LocalDate dataCadastro; //GERADOS PELO BANCO, ESTUDAR CLASSE SQL PARA VER SE TEM COMO DEVOLVER O VALOR
+  private LocalDate dataCadastro; // GERADOS PELO BANCO, ESTUDAR CLASSE SQL PARA VER SE TEM COMO DEVOLVER O VALOR
   private String rua;
   private String bairro;
   private int num;
@@ -19,18 +20,16 @@ public class EntidadePessoa {
   private String UF;
   private String cidade;
 
-  public EntidadePessoa(String nome, String dataNascimento, String rua, String bairro, int num, String CEP, String UF, String cidade) {
-    this.nome = nome;
-    setDataNascimento(dataNascimento);
-    this.rua = rua;
-    this.bairro = bairro;
-    this.num = num;
-    this.CEP = CEP;
-    this.UF = UF;
-    this.cidade = cidade;
+  public EntidadePessoa() {
   }
 
-  public EntidadePessoa() {
+  public int getCodPes() {
+    return codPes;
+  }
+
+  public void setCodPes(String codPes) {
+
+    this.codPes = Integer.valueOf(codPes);
   }
 
   public String getNome() {
@@ -98,8 +97,7 @@ public class EntidadePessoa {
     this.cidade = cidade;
   }
 
-  public void salvar(Connection conn)
-  {
+  public void salvarPessoa(Connection conn) throws SQLException {
     DAO_Pessoa.salvar(conn, this);
   }
 }

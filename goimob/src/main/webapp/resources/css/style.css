@@ -17,7 +17,7 @@
 
 /* ========= BACKGROUND BODY ========= */
 .bg-image-login{
-    background-image: url("Assets/BackgroundLogin.png");
+    background-image: url("../images/BackgroundLogin.png");
     height: 787px;
     width: 101%;
     background-size: cover;
@@ -103,14 +103,14 @@
 /* ====X==== FORMULARIO ====X==== */
 
 /* ========= FOOTER ========= */
-.footer-imob{
+/* .footer-imob{
 
-}
+} */
 /* ====X==== FOOTER ====X==== */
 
 /* ========= BACKGROUND BODY CONTRATO ========= */
 .bg-image-contrato{
-    background-image: url("Assets/BackgroundContrato.png");
+    background-image: url("../images/BackgroundContrato.png");
     height: 850px;
     width: 100%;
     background-size: cover;
@@ -166,5 +166,4 @@
     margin-top: 10px;
     font-weight: 600;
 }
-/* ====X==== FORMULARIO CONTRATO ====X==== */
-
+/* ====X==== FORMULARIO CONTRATO ====X==== *
