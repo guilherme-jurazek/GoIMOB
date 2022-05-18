@@ -2,6 +2,7 @@ package control.action;
 
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -11,7 +12,7 @@ import control.ControlObj;
 
 public interface iAction {
 
-  ControlObj exec (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+  ControlObj exec (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException;
   
   /**
    * Essa é a classe de interface

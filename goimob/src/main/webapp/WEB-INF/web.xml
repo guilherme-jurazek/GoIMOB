@@ -1,11 +1,24 @@
-
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
 
 
   <display-name>GoIMOB</display-name>
+  
+  <!-- CONTROLE (FILTROS) -->
 
-  <!-- CONTROLE -->
+  <!-- FILTRO PARA TRATAR ERROS SQL E ABRIR CONEXAO COM O BANCO -->
+  <filter>
+    <filter-name>DB_ConnectionFilter</filter-name>
+    <filter-class>control.filter.DB_ConnectionFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>DB_ConnectionFilter</filter-name>
+    <url-pattern>/in</url-pattern>
+  </filter-mapping>
+
+
+  <!-- FILTRO DE ALTORIZAÇÃO -->
   <filter>
     <filter-name>AuthorizationFilter</filter-name>
     <filter-class>control.filter.AuthorizationFilter</filter-class>
@@ -16,18 +29,36 @@
     <url-pattern>/in</url-pattern>
   </filter-mapping>
 
+  <!-- FILTRO MODIFICADOR DE REQUISIÇÃO -->
+  <filter>
+    <filter-name>RequestWrapperFilter</filter-name>
+    <filter-class>control.filter.RequestWrapperFilter</filter-class>
+  </filter>
 
+  <filter-mapping>
+    <filter-name>RequestWrapperFilter</filter-name>
+    <url-pattern>/in</url-pattern>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>REQUEST</dispatcher>
+  </filter-mapping>
+
+  <!-- 
   <filter>
     <filter-name>ControlFilter</filter-name>
-    <filter-class>control.filter.ControllerFilter</filter-class>
+    <filter-class>control.filter.ControlFilter</filter-class>
   </filter>
 
   <filter-mapping>
     <filter-name>ControlFilter</filter-name>
     <url-pattern>/in</url-pattern>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>REQUEST</dispatcher>
   </filter-mapping>
+  -->
 
-  <!-- <listener>
+  <!-- 
+  <listener>
     <listener-class>config.Listener</listener-class>
-  </listener> -->
+  </listener> 
+  -->
 </web-app>

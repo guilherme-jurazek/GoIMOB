@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import config.VARS;
 import control.ControlObj;
-import database.DataBaseConnection;
+import database.DB_ConnectionFactory;
 
 public class Teste implements iAction {
 
@@ -27,7 +27,7 @@ public class Teste implements iAction {
     List<String> lista = null;
     Connection conn = null;
     try {
-      conn = new DataBaseConnection().getConnection();
+      conn = new DB_ConnectionFactory().getConnection();
       stmt = conn.createStatement();
       rs = stmt.executeQuery("SELECT * FROM tb_pessoa");
 

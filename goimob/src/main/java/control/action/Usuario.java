@@ -8,10 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import control.ControlObj;
-import control.filter.RequestWrapper;
-import model.entiny.EntidadePessoaFisica;
+import model.entiny.EntidadeUsuario;
 
-public class PessoaFisica implements iAction {
+public class Usuario implements iAction {
 
   @Override
   public ControlObj exec(HttpServletRequest request, HttpServletResponse response)
@@ -23,20 +22,18 @@ public class PessoaFisica implements iAction {
       case "POST":
 
         String id = request.getParameter("id");
-        String cpf = request.getParameter("cpf"); // Ok
-        String sexo = request.getParameter("sexo"); // Ok
+        String email = request.getParameter("email"); // Ok
+        String senha = request.getParameter("senha"); // Ok
 
-        EntidadePessoaFisica pes_fis = new EntidadePessoaFisica();
+        EntidadeUsuario usu = new EntidadeUsuario();
 
-        pes_fis.setCodPes(id);
-        pes_fis.setCPF(cpf);
-        pes_fis.setSexo(sexo);
+        usu.setCodPes(id);
+        usu.setEmail(email);
+        usu.setSenha(senha);
 
-        pes_fis.salvarPessoaFisica(request);
+        usu.salvarUsuario(request);
 
-        ((RequestWrapper) request).setParameter("action", "Usuario");
-
-        retorno = new ControlObj("forward", "in");
+        retorno = new ControlObj("forward", "index.jsp");
         break;
 
       case "GET":
@@ -48,6 +45,7 @@ public class PessoaFisica implements iAction {
       default:
         break;
     }
+
     return retorno;
   }
 

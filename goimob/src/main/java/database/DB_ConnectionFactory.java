@@ -5,10 +5,10 @@ import java.sql.DriverManager;
 
 import config.VARS;
 
-public class DataBaseConnection {
+public class DB_ConnectionFactory {
 
   /**
-   * CLASSE DataBaseConnection
+   * CLASSE DB_ConnectionFactory
    * 
    * Essa classe será responsável por fazer a conexão direta
    * com o banco, será nela que as configurações de acesso,

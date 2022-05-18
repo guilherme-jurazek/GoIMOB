@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public abstract class GenericDAO {
   
-  public static PreparedStatement create (Connection con, String createSQL, Object... parametros) {
+  public static PreparedStatement create (Connection con, String createSQL, Object... parametros) throws SQLException {
     try {
       PreparedStatement pstmt = con.prepareStatement(createSQL, PreparedStatement.RETURN_GENERATED_KEYS);
         
@@ -14,17 +14,11 @@ public abstract class GenericDAO {
         pstmt.setObject(i + 1, parametros[i]);
       }
       pstmt.execute();
-      // ResultSet rs = pstmt.getGeneratedKeys();
-      // rs.next();
-      // System.out.println("Id: " + rs.getInt(1));
-      // System.out.println("Data: " + rs.getObject(4));
-      // System.out.println("Commit effectived!");
       
       return pstmt;
 
     } catch (SQLException e) {
-      System.out.println("Erro: " + e.toString());
-      throw new RuntimeException(e);
+      throw new SQLException(e);
     }
   };
 

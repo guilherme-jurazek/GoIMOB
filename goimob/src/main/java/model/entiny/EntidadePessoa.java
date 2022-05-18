@@ -1,9 +1,9 @@
 package model.entiny;
 
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+
+import javax.servlet.http.HttpServletRequest;
 
 import dao.DAO_Pessoa;
 
@@ -23,8 +23,8 @@ public class EntidadePessoa {
   public EntidadePessoa() {
   }
 
-  public int getCodPes() {
-    return codPes;
+  public String getCodPes() {
+    return String.valueOf(codPes);
   }
 
   public void setCodPes(String codPes) {
@@ -97,7 +97,7 @@ public class EntidadePessoa {
     this.cidade = cidade;
   }
 
-  public void salvarPessoa(Connection conn) throws SQLException {
-    DAO_Pessoa.salvar(conn, this);
+  public void salvarPessoa(HttpServletRequest request) {
+    DAO_Pessoa.salvar(request, this);
   }
 }

@@ -1,7 +1,8 @@
 package model.entiny;
 
-import java.sql.Connection;
 import java.sql.SQLException;
+
+import javax.servlet.http.HttpServletRequest;
 
 import dao.DAO_PessoaFisica;
 
@@ -29,8 +30,8 @@ public class EntidadePessoaFisica extends EntidadePessoa {
     this.sexo = sexo.charAt(0);
   }
 
-  public void salvarPessoaFisica(Connection conn) throws SQLException
+  public void salvarPessoaFisica(HttpServletRequest request) throws SQLException
   {
-    DAO_PessoaFisica.salvar(conn, this);
+    DAO_PessoaFisica.salvar(request, this);
   }
 }

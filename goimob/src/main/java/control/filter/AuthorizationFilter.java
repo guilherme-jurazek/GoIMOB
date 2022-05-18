@@ -29,7 +29,7 @@ public class AuthorizationFilter implements Filter {
   public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
       throws IOException, ServletException {
 
-    // System.out.println("AuthorizationFilter started...");
+    System.out.println("AuthorizationFilter started...");
 
     HttpServletRequest req = (HttpServletRequest) request;
     HttpServletResponse resp = (HttpServletResponse) response;
@@ -57,6 +57,6 @@ public class AuthorizationFilter implements Filter {
 
     chain.doFilter(req, resp);
     
-    // System.out.println("AuthorizationFilter finish...");
+    System.out.println("AuthorizationFilter finish...");
   }
 }

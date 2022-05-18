@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import control.ControlObj;
-import model.entiny.EntidadeNivelAcesso;
 
 public class NivelAcesso implements iAction {
   /**
@@ -55,10 +54,10 @@ public class NivelAcesso implements iAction {
       case "GET":
         // REGRA AQUI.
 
-        int qtdeNivelAcesso;
-        String param = request.getParameter("entiny_function");
-        if(param != null && param.equalsIgnoreCase("getQtdeNivelAcesso"));
-          qtdeNivelAcesso = EntidadeNivelAcesso.getQtdeNivelAcesso();
+        // int qtdeNivelAcesso;
+        // String param = request.getParameter("entiny_function");
+        // if(param != null && param.equalsIgnoreCase("getQtdeNivelAcesso"));
+        //   qtdeNivelAcesso = EntidadeNivelAcesso.getQtdeNivelAcesso();
 
         break;
 

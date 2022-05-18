@@ -1,7 +1,6 @@
 package model.entiny;
 
-import java.sql.Connection;
-import java.sql.SQLException;
+import javax.servlet.http.HttpServletRequest;
 
 import dao.DAO_Usuario;
 
@@ -39,7 +38,7 @@ public class EntidadeUsuario extends EntidadePessoaFisica {
   }
 
 
-  public void salvarUsuario(Connection conn) throws SQLException {
-    DAO_Usuario.salvar(conn, this);
+  public void salvarUsuario(HttpServletRequest request) {
+    DAO_Usuario.salvar(request, this);
   }
 }
