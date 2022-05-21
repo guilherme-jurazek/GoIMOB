@@ -30,6 +30,7 @@
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.29</version>
+      <!-- <scope>provided</scope> -->
     </dependency>
 
     <dependency>
@@ -87,11 +88,11 @@
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
           <version>3.3.2</version>
-          <configuration>
-            <outputDirectory>/opt/tomcat/webapps</outputDirectory>
+          <!-- <configuration> -->
+            <!-- <outputDirectory>/home/cebola/.apache-tomcat-9.0.62/webapps/</outputDirectory> -->
             <!-- <outputDirectory>/home/cebola/.apache-tomcat-9.0.62/webapps/</outputDirectory> -->
             <!-- <outputDirectory>C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps</outputDirectory> -->
-          </configuration>
+          <!-- </configuration> -->
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>

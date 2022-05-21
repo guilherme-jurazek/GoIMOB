@@ -41,24 +41,9 @@
     <dispatcher>FORWARD</dispatcher>
     <dispatcher>REQUEST</dispatcher>
   </filter-mapping>
-
-  <!-- 
-  <filter>
-    <filter-name>ControlFilter</filter-name>
-    <filter-class>control.filter.ControlFilter</filter-class>
-  </filter>
-
-  <filter-mapping>
-    <filter-name>ControlFilter</filter-name>
-    <url-pattern>/in</url-pattern>
-    <dispatcher>FORWARD</dispatcher>
-    <dispatcher>REQUEST</dispatcher>
-  </filter-mapping>
-  -->
-
-  <!-- 
+  
   <listener>
-    <listener-class>config.Listener</listener-class>
+    <listener-class>config.GoImobContextListener</listener-class>
   </listener> 
-  -->
+ 
 </web-app>

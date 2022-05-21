@@ -23,6 +23,11 @@ public class EntidadePessoa {
   public EntidadePessoa() {
   }
 
+  public LocalDate getDataCadastro() {
+    return dataCadastro;
+  }
+
+
   public String getCodPes() {
     return String.valueOf(codPes);
   }

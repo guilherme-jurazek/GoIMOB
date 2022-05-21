@@ -26,19 +26,20 @@ public class Pessoa implements iAction {
           String nome = request.getParameter("name"); // ok
           String dataNascimento = request.getParameter("data_nasc"); // Faltando
           dataNascimento = "1998-09-18"; // Faltando
-          String cep = request.getParameter("cep"); // Ok
           String num = request.getParameter("nresidencia"); // Ok
+          String cep = request.getParameter("cep"); // Ok
 
-          /* parametros que serão obtidos por API */
+          /* parametros que serão obtidos por API atráves do CEP */
           String uf = request.getParameter("uf");
           String cidade = request.getParameter("cidade");
           String bairro = request.getParameter("bairro");
           String rua = request.getParameter("rua");
+          
           uf = "SP";
           cidade = "Nantes";
           bairro = "Centro";
           rua = "Siqueira";
-          /* parametros que serão obtidos por API */
+          /* parametros que serão obtidos por API atráves do CEP */
 
           EntidadePessoa pes = new EntidadePessoa();
 

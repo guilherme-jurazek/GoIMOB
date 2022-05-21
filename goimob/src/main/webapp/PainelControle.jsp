@@ -1,17 +1,18 @@
-<html lang="en">
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<html lang="pt-BR">
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <%-- <meta charset="UTF-8"> --%>
+    <%-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> --%>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources/css/style.css">
     <style>
         /* ========= INFORMACOES PERFIL ========= */
         .body-painel{
@@ -121,23 +122,23 @@
 <body>
     <%-- ==============  HEADER ============== --%>
     <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
-        <a class="navbar-brand" href="index.jsp"><img src="Assets/Logo.png" style="width: 175px; margin-left: 20px"> </a>
+        <a class="navbar-brand" href="index.jsp"><img src="resources/images/Logo.png" style="width: 175px; margin-left: 20px"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="collapsibleNavbar" style="justify-content: right; margin-right: 20px">
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link text-dark nav-text-style" href="#">Locações</a>
+              <a class="nav-link text-dark nav-text-style" href="#">LocaÃ§Ãµes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark nav-text-style" href="#">Venda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark nav-text-style" href="#">Imobiliárias</a>
+              <a class="nav-link text-dark nav-text-style" href="#">ImobiliÃ¡rias</a>
             </li>    
             <li class="nav-item">
-                <a class="nav-link text-dark nav-text-style" href="#"><img src="Assets/User.png" width="28px"> Usuário</a>
+                <a class="nav-link text-dark nav-text-style" href="#"><img src="resources/images/User.png" width="28px"> UsuÃ¡rio</a>
             </li>    
           </ul>
         </div>  
@@ -151,7 +152,7 @@
             <div class="container-princ-info">
                 <p class="tittle-usu">Corretor</p>
                 <div class="cointainer-info-pes">
-                    <img class="img-perfil" src="Assets/Corretor.png">
+                    <img class="img-perfil" src="resources/images/Corretor.png">
                     <p class="text-usu-info">
                         Nome: Victor Taveira<br>
                         Telefone: (18) 97884-5564<br>
@@ -164,11 +165,11 @@
             <div>
                 <div class="container-info-dinamic table-background-imoveis">
                     <div class="functions">
-                        <a href="GerarContrato.jsp"><button class="btn-op">Cadastrar novo Anúncio</button></a>
+                        <a href="GerarContrato.jsp"><button class="btn-op">Cadastrar novo AnÃºncio</button></a>
                         <a href=""><button class="btn-op">Filtros</button></a>
                         <a href=""><button class="btn-op">Ordenar </button></a>
                         <div style="text-align: right; margin:0 auto;">
-                            <p class="tittle-table">Imóveis anunciados pelo corretor</p>
+                            <p class="tittle-table">ImÃ³veis anunciados pelo corretor</p>
                         </div>
                     </div>
                     <div>
@@ -176,7 +177,7 @@
                             <thead>
                               <tr>
                                 <th>Nome Cliente</th>
-                                <th>Valor Imóvel</th>
+                                <th>Valor ImÃ³vel</th>
                                 <th>Taxa Corretor</th>
                                 <th>Em aberto?</th>
                                 <th>Data Contrato</th>
@@ -185,7 +186,7 @@
                             </thead>
                             <tbody>
                               <tr class="tr-effect">
-                                <td>Cássia</td>
+                                <td>CÃ¡ssia</td>
                                 <td>R$250.000</td>
                                 <td>14%</td>
                                 <td>Sim</td>
@@ -196,7 +197,7 @@
                                 <td>Mary</td>
                                 <td>R$850.000</td>
                                 <td>12%</td>
-                                <td>Não</td>
+                                <td>NÃ£o</td>
                                 <td>15/08/2018</td>
                                 <td>Venda</td>
                               </tr>
@@ -204,7 +205,7 @@
                                 <td>July</td>
                                 <td>R$2.000</td>
                                 <td>2%</td>
-                                <td>Não</td>
+                                <td>NÃ£o</td>
                                 <td>12/05/2022</td>
                                 <td>Aluguel</td>
 
@@ -232,7 +233,7 @@
                         <thead>
                           <tr>
                             <th>Nome Cliente</th>
-                            <th>Valor Imóvel</th>
+                            <th>Valor ImÃ³vel</th>
                             <th>Taxa Corretor</th>
                             <th>Em aberto?</th>
                             <th>Data Contrato</th>
@@ -241,7 +242,7 @@
                         </thead>
                         <tbody>
                           <tr class="tr-effect">
-                            <td>Cássia</td>
+                            <td>CÃ¡ssia</td>
                             <td>R$250.000</td>
                             <td>14%</td>
                             <td>Sim</td>
@@ -252,7 +253,7 @@
                             <td>Mary</td>
                             <td>R$850.000</td>
                             <td>12%</td>
-                            <td>Não</td>
+                            <td>NÃ£o</td>
                             <td>15/08/2018</td>
                             <td>Venda</td>
                           </tr>
@@ -260,7 +261,7 @@
                             <td>July</td>
                             <td>R$2.000</td>
                             <td>2%</td>
-                            <td>Não</td>
+                            <td>NÃ£o</td>
                             <td>12/05/2022</td>
                             <td>Aluguel</td>
                             
@@ -285,7 +286,7 @@
                         <thead>
                           <tr>
                             <th>Nome Cliente</th>
-                            <th>Valor Imóvel</th>
+                            <th>Valor ImÃ³vel</th>
                             <th>Taxa Corretor</th>
                             <th>Em aberto?</th>
                             <th>Data Contrato</th>
@@ -296,7 +297,7 @@
                             <a href="index.jsp" style="editar-imovel">
                                 <tr class="tr-effect">
                                     
-                                    <td>Cássia</td>
+                                    <td>CÃ¡ssia</td>
                                     <td>R$250.000</td>
                                     <td>14%</td>
                                     <td>Sim</td>
@@ -309,7 +310,7 @@
                             <td>Mary</td>
                             <td>R$850.000</td>
                             <td>12%</td>
-                            <td>Não</td>
+                            <td>NÃ£o</td>
                             <td>15/08/2018</td>
                             <td>Venda</td>
                           </tr>
@@ -317,7 +318,7 @@
                             <td>July</td>
                             <td>R$2.000</td>
                             <td>2%</td>
-                            <td>Não</td>
+                            <td>NÃ£o</td>
                             <td>12/05/2022</td>
                             <td>Aluguel</td>
                             

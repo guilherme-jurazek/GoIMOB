@@ -19,20 +19,21 @@ public class DB_ConnectionFactory {
    * 
    */
 
-   static {
+  static {
     try {
+      // Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
       Class.forName("com.mysql.cj.jdbc.Driver");
-    } catch (ClassNotFoundException e) {
-      e.printStackTrace();
+    } catch (ClassNotFoundException /*| InstantiationException | IllegalAccessException */e) {
+      System.out.println("Erro ao carregar driver: " + e.getMessage());
     }
-   }
+  }
 
-   public Connection getConnection() {
-     try {
-       
-       return DriverManager.getConnection(VARS.DBURL, VARS.DBUSER, VARS.DBPASS);
-     } catch (Exception e) {
-       throw new RuntimeException(e);
-     }
-   }
+  public Connection getConnection() {
+    try {
+      // Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+      return DriverManager.getConnection(VARS.DBURL, VARS.DBUSER, VARS.DBPASS);
+    } catch (Exception e) {
+      throw new RuntimeException("Erro ao obter conexão: ");
+    }
+  }
 }

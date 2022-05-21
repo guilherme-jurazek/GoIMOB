@@ -46,19 +46,12 @@ public class NivelAcesso implements iAction {
   public ControlObj exec(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
    
     switch (request.getMethod()) {
-
       case "POST":
-        //Novo Nível de Acesso
+        
         break;
 
       case "GET":
         // REGRA AQUI.
-
-        // int qtdeNivelAcesso;
-        // String param = request.getParameter("entiny_function");
-        // if(param != null && param.equalsIgnoreCase("getQtdeNivelAcesso"));
-        //   qtdeNivelAcesso = EntidadeNivelAcesso.getQtdeNivelAcesso();
-
         break;
 
       case "PUT":

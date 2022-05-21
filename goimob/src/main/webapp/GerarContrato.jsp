@@ -1,23 +1,23 @@
-
-<html lang="en">
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<html lang="pt-BR">
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <%-- <meta charset="UTF-8"> --%>
+    <%-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> --%>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gerar Contrato</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <%-- <style>
         
     /* ========= BACKGROUND BODY CONTRATO ========= */
     .bg-image-contrato{
-        background-image: url("Assets/BackgroundContrato.png");
+        background-image: url("../images/BackgroundContrato.png");
         height: 850px;
         width: 100%;
         background-size: cover;
@@ -75,28 +75,28 @@
     }
     /* ====X==== FORMULARIO CONTRATO ====X==== */
         
-    </style>
+    </style> --%>
 </head>
 <body>
     <%-- ==============  HEADER ============== --%>
     <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
-        <a class="navbar-brand" href="#"><img src="Assets/Logo.png" style="width: 175px; margin-left: 20px"> </a>
+        <a class="navbar-brand" href="#"><img src="resources/images/Logo.png" style="width: 175px; margin-left: 20px"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="collapsibleNavbar" style="justify-content: right; margin-right: 20px">
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link text-dark nav-text-style" href="#">LocaÁıes</a>
+              <a class="nav-link text-dark nav-text-style" href="#">Loca√ß√µes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-dark nav-text-style" href="#">Venda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark nav-text-style" href="#">Imobili·rias</a>
+              <a class="nav-link text-dark nav-text-style" href="#">Imobili√°rias</a>
             </li>    
             <li class="nav-item">
-                <a class="nav-link text-dark nav-text-style" href="#"><img src="Assets/User.png" width="28px"> Login</a>
+                <a class="nav-link text-dark nav-text-style" href="#"><img src="resources/images/User.png" width="28px"> Login</a>
             </li>    
           </ul>
         </div>  
@@ -112,17 +112,17 @@
             <form class="form-gerar">
                 <div class="row">
                     <div class="col">
-                        <label><p class="label-gerar">CÛdigo do Usu·rio</p></label>
+                        <label><p class="label-gerar">C√≥digo do Usu√°rio</p></label>
                         <select class="form-control input-gerar" id="exampleFormControlSelect1">
-                            <option>1 - Jo„o Almeida</option>
-                            <option>2 - Nome GenÈrico</option>
+                            <option>1 - Jo√£o Almeida</option>
+                            <option>2 - Nome Gen√©rico</option>
                             <option>3 - Teste de Nome</option>
                             <option>4 - Mais um Nome</option>
-                            <option>5 - ⁄ltimo nome</option>
+                            <option>5 - √öltimo nome</option>
                         </select>
                     </div>
                     <div class="col">
-                        <label ><p class="label-gerar">CÛdigo do dono do ImÛvel</p></label>
+                        <label ><p class="label-gerar">C√≥digo do dono do Im√≥vel</p></label>
                         <select class="form-control input-gerar" id="exampleFormControlSelect1">
                             <option>145 - Francisco Assis</option>
                             <option>146 - Cassia Perego</option>
@@ -131,15 +131,15 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <label><p class="label-gerar">CÛdigo do An˙ncio</p></label>
+                        <label><p class="label-gerar">C√≥digo do An√∫ncio</p></label>
                         <select class="form-control input-gerar" id="exampleFormControlSelect1">
-                            <option>1 - Casa Padr„o</option>
-                            <option>2 - Mans„o Prudente</option>
+                            <option>1 - Casa Padr√£o</option>
+                            <option>2 - Mans√£o Prudente</option>
                             <option>3 - Casa Teste</option>
                         </select>
                     </div>
                     <div class="col">
-                        <label ><p class="label-gerar">Desconto do imÛvel(%)</p></label>
+                        <label ><p class="label-gerar">Desconto do im√≥vel(%)</p></label>
                         <input type="password" class="form-control input-gerar" placeholder="Exemplo: 25" name="pswd">
                     </div>
                 </div>
@@ -155,13 +155,13 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <label><p class="label-gerar">DescriÁ„o da Venda</p></label>
-                        <textarea type="text" class="form-control input-gerar" id="email" placeholder="DescriÁ„o" name="email" rows="3" style="resize: none"></textarea>
+                        <label><p class="label-gerar">Descri√ß√£o da Venda</p></label>
+                        <textarea type="text" class="form-control input-gerar" id="email" placeholder="Descri√ß√£o" name="email" rows="3" style="resize: none"></textarea>
                     </div>
 
                 </div>
             </form>
-            <a href="cadastro.jsp"><button class="btn-gerar">Gerar</button></a>
+            <a href="Cadastro.jsp"><button class="btn-gerar">Gerar</button></a>
         </div>
     </div>        
     <%-- =====XXX======  BODY ======XXX===== --%>     

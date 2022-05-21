@@ -30,10 +30,10 @@ public class Usuario implements iAction {
         usu.setCodPes(id);
         usu.setEmail(email);
         usu.setSenha(senha);
-
+        usu.setCodNivelAcesso(Integer.valueOf(usu.getCodPes()) == 1 ? 1 : 3);
         usu.salvarUsuario(request);
-
         retorno = new ControlObj("forward", "index.jsp");
+
         break;
 
       case "GET":
