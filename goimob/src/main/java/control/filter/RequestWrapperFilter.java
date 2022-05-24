@@ -12,7 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 public class RequestWrapperFilter implements Filter {
 
   @Override
-  public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+  public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+      throws IOException, ServletException {
     System.out.println("RequestWrapperFilter start...");
     HttpServletRequest wrappedRequest = new RequestWrapper((HttpServletRequest) request);
     chain.doFilter(wrappedRequest, response);

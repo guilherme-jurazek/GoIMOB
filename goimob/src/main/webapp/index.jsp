@@ -1,3 +1,8 @@
+<%
+response.setHeader("Cache-Control","no-cache"); //HTTP 1.1
+response.setHeader("Pragma","no-cache"); //HTTP 1.0
+response.setDateHeader ("Expires", 0);
+%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html lang="pt-BR">
 <head>
@@ -49,8 +54,8 @@
     <%-- ==============  BODY ============== --%>
     <div class="bg-image-login">
         <div class="containter-login">
-            <div>
-                <h1 class="tittle-login">Rodrigues</h1>
+            <div>o
+                <h1 class="tittle-login">Login</h1>
             </div>
             <div>
                 <div>

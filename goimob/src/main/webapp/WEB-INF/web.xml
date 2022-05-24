@@ -3,10 +3,11 @@
 
 
   <display-name>GoIMOB</display-name>
-  
+
   <!-- CONTROLE (FILTROS) -->
 
   <!-- FILTRO PARA TRATAR ERROS SQL E ABRIR CONEXAO COM O BANCO -->
+  <!-- 1 -->
   <filter>
     <filter-name>DB_ConnectionFilter</filter-name>
     <filter-class>control.filter.DB_ConnectionFilter</filter-class>
@@ -19,6 +20,18 @@
 
 
   <!-- FILTRO DE ALTORIZAÇÃO -->
+  <!-- 2 -->
+  <filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>control.filter.AuthenticationFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/in</url-pattern>
+  </filter-mapping>
+
+
   <filter>
     <filter-name>AuthorizationFilter</filter-name>
     <filter-class>control.filter.AuthorizationFilter</filter-class>
@@ -30,6 +43,7 @@
   </filter-mapping>
 
   <!-- FILTRO MODIFICADOR DE REQUISIÇÃO -->
+  <!-- 2 -->
   <filter>
     <filter-name>RequestWrapperFilter</filter-name>
     <filter-class>control.filter.RequestWrapperFilter</filter-class>
@@ -41,9 +55,19 @@
     <dispatcher>FORWARD</dispatcher>
     <dispatcher>REQUEST</dispatcher>
   </filter-mapping>
-  
+
+  <!-- <servlet>
+    <servlet-name>ControlServlet</servlet-name>
+    <servlet-class>control.servlet.ControlServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ControlServlet</servlet-name>
+    <url-pattern>/in</url-pattern>
+  </servlet-mapping> -->
+
   <listener>
     <listener-class>config.GoImobContextListener</listener-class>
-  </listener> 
- 
+  </listener>
+
 </web-app>

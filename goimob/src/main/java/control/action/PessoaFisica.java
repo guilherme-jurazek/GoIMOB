@@ -22,9 +22,9 @@ public class PessoaFisica implements iAction {
     switch (request.getMethod()) {
       case "POST":
 
-        String id = request.getParameter("id");
-        String cpf = request.getParameter("cpf"); // Ok
-        String sexo = request.getParameter("sexo"); // Ok
+        String id = request.getParameter("pes_id");
+        String cpf = request.getParameter("pes_fis_cpf"); // Ok
+        String sexo = request.getParameter("pes_fis_sexo"); // Ok
 
         EntidadePessoaFisica pes_fis = new EntidadePessoaFisica();
 

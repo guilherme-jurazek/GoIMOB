@@ -21,9 +21,9 @@ public class Usuario implements iAction {
     switch (request.getMethod()) {
       case "POST":
 
-        String id = request.getParameter("id");
-        String email = request.getParameter("email"); // Ok
-        String senha = request.getParameter("senha"); // Ok
+        String id = request.getParameter("pes_id");
+        String email = request.getParameter("usu_email"); // Ok
+        String senha = request.getParameter("usu_senha"); // Ok
 
         EntidadeUsuario usu = new EntidadeUsuario();
 

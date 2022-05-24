@@ -41,7 +41,8 @@ public class DB_ConnectionFilter implements Filter {
       try {
         conexao.close();
       } catch (SQLException e) {
-        System.out.println("Erro de fechamento de conexão com o banco: " + e.getMessage());
+        System.out.println("Erro de fechamento de conexão com o banco: " +
+            e.getMessage());
         // e.printStackTrace();
       }
     }

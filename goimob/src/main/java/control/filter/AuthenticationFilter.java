@@ -9,18 +9,14 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
 public class AuthenticationFilter implements Filter{
-  /**
-   * Aqui e o filtro de aunteticacao.
-   */
+  
+
+
   @Override
   public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-
-    String[] params = {"Victor", "Taveira"};
-
-    for (String string : params) {
-      System.out.println(string);
-    }
-
+    System.out.println("AuthenticationFilter started...");
+    chain.doFilter(request, response);
+    System.out.println("AuthenticationFilter finish...");
   }
   
 }

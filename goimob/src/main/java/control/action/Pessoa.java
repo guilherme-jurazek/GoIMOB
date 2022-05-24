@@ -23,17 +23,17 @@ public class Pessoa implements iAction {
 
       case "POST":
 
-          String nome = request.getParameter("name"); // ok
-          String dataNascimento = request.getParameter("data_nasc"); // Faltando
+          String nome = request.getParameter("pes_nome"); // ok
+          String dataNascimento = request.getParameter("pes_data_nasc"); // Faltando
           dataNascimento = "1998-09-18"; // Faltando
-          String num = request.getParameter("nresidencia"); // Ok
-          String cep = request.getParameter("cep"); // Ok
+          String num = request.getParameter("pes_num_residencia"); // Ok
+          String cep = request.getParameter("pes_cep"); // Ok
 
           /* parametros que serão obtidos por API atráves do CEP */
-          String uf = request.getParameter("uf");
-          String cidade = request.getParameter("cidade");
-          String bairro = request.getParameter("bairro");
-          String rua = request.getParameter("rua");
+          String uf = request.getParameter("pes_uf");
+          String cidade = request.getParameter("pes_cidade");
+          String bairro = request.getParameter("pes_bairro");
+          String rua = request.getParameter("pes_rua");
           
           uf = "SP";
           cidade = "Nantes";
@@ -54,7 +54,7 @@ public class Pessoa implements iAction {
 
           pes.salvarPessoa(request);
 
-          ((RequestWrapper) request).setParameter("id", pes.getCodPes());
+          ((RequestWrapper) request).setParameter("pes_id", pes.getCodPes());
           ((RequestWrapper) request).setParameter("action", "PessoaFisica");
 
           retorno = new ControlObj("forward", "in");

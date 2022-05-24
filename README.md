@@ -13,3 +13,12 @@ Esse projeto é mantido pelos colaboradores:
 |            [Renne Almeida](https://github.com/rennealmeida)             |              [Victor Rodriguez](https://github.com/beept)              |                   [Guilherme Jurazek](https://github.com/guilherme-jurazek)                    |
 
 </div>
+
+
+---
+
+Todas as requisições estão sendo montadas em:
+
+* https://www.postman.com/goimob
+
+* https://goimob.postman.co/
