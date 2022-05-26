@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CD742B94-6ED4-9C91-C3C7-82E931D99529" containerWithKeyObject="F7F74FF8-7556-A232-CB2A-39B869C69F5C" localFKIndex="266668BE-C914-C967-7A19-DD5791F1293B" name="AGENDAMENTO_VISITA_CORRETOR_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>1614E98C-F23C-0102-5EB4-42F23D55446D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C5DD9DFE-D92C-36E5-BA78-44C217E00C7E</referredTableID>
+<keyObject>7687B42F-A80A-E0C7-4A69-E0D5C2FFE38E</keyObject>
+<referredKeyID>7687B42F-A80A-E0C7-4A69-E0D5C2FFE38E</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

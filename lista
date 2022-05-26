@@ -1,0 +1,48 @@
+Proprietario | Bairro       | Cidade    | Valor     | Tipo Imovel   |   Status.
+
+    
+tb_imovel    | tb_imovel    | tb_imovel | tb_imovel | tb_anuncio    |   tb_anuncio.
+
+
+<%--AQUI QUE ME INTERESSA --%>
+
+                                <tr class="tr-effect">
+                                    <td>Cássia</td>
+                                    <td>R$250.000</td>
+                                    <td>14%</td>
+                                    <td>Sim</td>
+                                    <td>15/01/2012</td>
+                                    <td>Venda</td>
+                                </tr>
+                                <tr class="tr-effect">
+                                    <td>Mary</td>
+                                    <td>R$850.000</td>
+                                    <td>12%</td>
+                                    <td>Não</td>
+                                    <td>15/08/2018</td>
+                                    <td>Venda</td>
+                                </tr>
+                                <tr class="tr-effect">
+                                    <td>July</td>
+                                    <td>R$2.000</td>
+                                    <td>2%</td>
+                                    <td>Não</td>
+                                    <td>12/05/2022</td>
+                                    <td>Aluguel</td>
+
+                                </tr>
+private String bairro;
+  private String cidade;
+  private Double valor;
+  private Character tipoImovel;
+  private Boolean status;
+  
+  www.globalcobrancas.com.br
+  
+  ListaAnuncioImovel
+  
+  30032716
+  
+  37999963870
+  /html/body/div[3]/div/div/div[2]/form/div[6]/div[2]/input
+  <input type="submit" class="btn-edit-dados">

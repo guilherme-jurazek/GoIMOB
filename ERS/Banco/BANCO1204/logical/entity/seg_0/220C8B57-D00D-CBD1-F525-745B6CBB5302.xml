@@ -28,10 +28,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="COD_CONTRATO" id="77A0E4A6-0ACC-24B1-F619-6053D410E5AC">
-<createdBy>PORTABLE</createdBy>
-<createdTime>2022-04-06 20:39:35 UTC</createdTime>
-<generatorID>A9F970B7-173B-2AC1-20D3-717CA726E30A</generatorID>
+<Attribute name="COD_CONTRATO" id="2AD0D8D2-AC9E-DC21-F26B-82140304E6F1">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-25 18:44:03 UTC</createdTime>
+<generatorID>995E617A-2E1F-4659-3563-1A778A18BE54</generatorID>
 <ownerDesignName>BANCO1204</ownerDesignName>
 <engineerTo>
 <item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
@@ -48,12 +48,14 @@
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-04-06 20:35:52 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>AC5BAD74-0663-737D-9A3A-73AC4769CB0F</attributeRef>
+<attributeRef>2AD0D8D2-AC9E-DC21-F26B-82140304E6F1</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

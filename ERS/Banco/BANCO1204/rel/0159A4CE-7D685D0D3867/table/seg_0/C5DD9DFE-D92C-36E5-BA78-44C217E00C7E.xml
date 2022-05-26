@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5DD9DFE-D92C-36E5-BA78-44C217E00C7E" name="CORRETOR">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>52E5D908-EFDE-119F-FE46-185286959ABE</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_CORRETOR" id="1AC44B57-35FD-85C4-D2E5-54F165F58568">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>64F7E0A2-C0A5-B15D-2F05-328A5C0808DD</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CRECI_CORRETOR" id="22A7FEAE-8547-5915-9AA3-BCC45B8A5955">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>F7813AC6-153C-BCAA-BDB0-D27165EBEC86</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CADASTRO_CORRETOR" id="AED43355-E800-59B1-3A6C-1888F91FDE74">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>7060784C-FD14-E4AB-F040-5C0AA8255560</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORRETORA_COD_CORRETORA" id="5DEC77A1-73DE-D4EA-03C3-20998D836FCE">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>6EEC089F-4BBD-2A2B-A585-BD14F6B650BA</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEC20D23-A814-D6A2-1C5D-1E7327CDFE08" referredColumn="4ACEC541-9C25-DB22-4CA0-C76D6C4BFB54"/>
+</associations>
+</Column>
+<Column name="FISICA_PESSOA_COD_PES" id="0C1E62CE-3424-976A-88F7-75B093B6441D">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>D64C8FF4-B50E-C267-E130-E556F94CDA7A</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDD67521-C859-E942-0417-7F62205A3A69" referredColumn="B37DCA3D-0C2B-3270-482F-2F10096E637E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7687B42F-A80A-E0C7-4A69-E0D5C2FFE38E" name="CORRETOR_PK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>4F1ECB0B-83EB-F8EA-84FA-62D3FBDE055B</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AC44B57-35FD-85C4-D2E5-54F165F58568"/>
+<colUsage columnID="5DEC77A1-73DE-D4EA-03C3-20998D836FCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FF334A6-BCAE-A9BC-A997-0FDF4DD1F19F" name="Corretor__IDX">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5575C0D2-7E4E-0DFA-AAE6-420C078DE3C3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0C1E62CE-3424-976A-88F7-75B093B6441D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09B2B900-E74C-99DB-D892-4433D11CD495" name="CORRETOR_FISICA_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>5575C0D2-7E4E-0DFA-AAE6-420C078DE3C3</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C1E62CE-3424-976A-88F7-75B093B6441D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D64A372-6A3F-35A0-E999-8D9D4656D3E8" name="CORRETOR_CORRETORA_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>3959E19A-A552-5F3F-31B9-3842F734C4E9</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DEC77A1-73DE-D4EA-03C3-20998D836FCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

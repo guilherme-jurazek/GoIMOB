@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2188B272-BBE9-D2F4-078E-79F654A9D2B3" name="Favoritos_Anuncios">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2188B272-BBE9-D2F4-078E-79F654A9D2B3" name="FAVORITO_ANUNCIO">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:03:13 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
@@ -26,7 +26,8 @@
 <referedAttribute>A9BDB66D-F7EA-177F-6C51-ACA8ED38BAE2</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="COD_ANUNCIO" id="011B6A10-33CD-25BD-7FDC-0C61DFDFA866">

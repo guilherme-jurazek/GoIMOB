@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="148BE160-BD84-5064-BFCA-5BDB509A8FD4" name="JURIDICA">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>DA73605F-2673-79B6-9713-2AA876EDD7E8</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_EMPRESA" id="1E2BAE5F-240B-5481-58F2-ACAE835090BC">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>B1E464B5-261E-F700-DBAB-AEAA2CF84104</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESSOA_COD_PES" id="041B118D-00F6-54DB-A0A1-71985A94E0A0">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>891E2CB6-FA00-C5F2-1B95-28820F6260A2</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7966385-CAFD-8D80-EFC8-AD48A4C85E27" referredColumn="CE711778-A167-3972-6461-FE2C3A9D907E"/>
+</associations>
+</Column>
+<Column name="CNPJ_EMPR" id="73ED8722-4A96-D5AD-186A-648C6E1F6CF9">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>35720E53-ECA0-98C2-91F5-2B8C7046CFF4</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>18</dataTypeSize>
+<ownDataTypeParameters>18,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOME_FANTASIA" id="49D3A5F0-DCB1-41A7-010C-2FA1CB46CE17">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>D8DAF74F-C803-21D3-B628-25504E98A287</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSCRICAO_ESTADUAL" id="A4CFC42D-E67E-BEF6-659F-5775D0E6A438">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>2ADA19F4-C92B-38C1-923F-04F87DDC8D23</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F65C2F1-F824-8EBA-66C7-9B73DED41022" name="JURIDICA_PK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>1BCB483A-7098-B59A-244A-66D16CD2B154</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E2BAE5F-240B-5481-58F2-ACAE835090BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46ED7D8F-8672-A2F0-D698-FA35968C3912" name="Juridica__IDX">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>085BAA45-5273-C5E0-4012-83207611433A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="041B118D-00F6-54DB-A0A1-71985A94E0A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65033A64-B15B-04AB-2A80-411B21E352C4" name="JURIDICA_PESSOA_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>085BAA45-5273-C5E0-4012-83207611433A</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="041B118D-00F6-54DB-A0A1-71985A94E0A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

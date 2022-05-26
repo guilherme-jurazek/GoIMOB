@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D31ECADA-48CA-E9CF-FE27-873872B0267F" name="Vistoria_Imovel">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D31ECADA-48CA-E9CF-FE27-873872B0267F" name="VISTORIA_IMO">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:11:54 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
@@ -15,7 +15,19 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="COD_IMOVEL" id="87E58C53-DAF0-23E2-28F6-23C53AB593E3">
+<Attribute name="COD_VISTORIA" id="281CF4F5-20EE-8213-C907-53934494C948">
+<createdBy>PORTABLE</createdBy>
+<createdTime>2022-03-09 16:12:35 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<engineerTo>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_IMO" id="87E58C53-DAF0-23E2-28F6-23C53AB593E3">
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:12:28 UTC</createdTime>
 <generatorID>95CD0961-C76F-80A2-72B4-E65CDCBE6682</generatorID>
@@ -24,18 +36,6 @@
 <item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
 </engineerTo>
 <referedAttribute>AD35D7AE-AFDD-6739-3EAC-D91F8082F134</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="COD_VISTORIA" id="281CF4F5-20EE-8213-C907-53934494C948">
-<createdBy>PORTABLE</createdBy>
-<createdTime>2022-03-09 16:12:35 UTC</createdTime>
-<ownerDesignName>BANCO1204</ownerDesignName>
-<engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -74,8 +74,9 @@
 <createdBy>PORTABLE</createdBy>
 <createdTime>2022-03-09 16:12:28 UTC</createdTime>
 <ownerDesignName>BANCO1204</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="true"/>
+<item key="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

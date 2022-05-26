@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F8EC888-0243-4B17-54D1-09D70A0E9A25" name="COMPRA_VENDA_IMOVEL">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>47AC9E4B-D949-C797-7B12-E608AD37768D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_COMPRA" id="4EB8F5A4-EA7F-B1D8-1DCD-061EC6C5407A">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>BBD0B4A9-70C6-4AE1-E839-08E2FAFA3403</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contrato_COD_CONTRATO" id="EF259418-E9DE-006E-BC57-9E6D67E08678">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>979CDA54-1440-D97D-3FAD-4E572E2ADBE8</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25BD3C10-0E8B-9206-E68B-8AC3D998AF3A" referredColumn="38C358F8-35B4-BE4F-A191-CA8A3F37D4CD"/>
+</associations>
+</Column>
+<Column name="TIPO_CV" id="73B4C7BE-2815-1FD9-1CB1-4D9284AC37B7">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>46EC5305-43E5-091F-C587-971E6E1434A2</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_CONTRATO" id="19C6694F-BD95-1CBD-E86B-0756A84D2FFB">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-25 17:18:23 UTC</createdTime>
+<generatorID>9E270821-7E21-7100-0F61-C411BC61D52A</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="552BB5C3-1B53-D7D3-950B-B6E0A7F8A746" name="COMPRA_VENDA_IMOVEL_PK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>B290D13C-B13A-D7B5-B1DE-7B0486E41A52</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EB8F5A4-EA7F-B1D8-1DCD-061EC6C5407A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FC46786-4A41-F4E4-03AC-989FF7EA48B3" name="COMPRA_VENDA_IMOVEL__IDX">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B3A220FB-B93A-22AC-2E2E-66044C96CB1C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="EF259418-E9DE-006E-BC57-9E6D67E08678"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="548A1915-1953-D07F-4FFC-00A6BC92AA8E" name="COMPRA_VENDA_IMOVEL_Contrato_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>B3A220FB-B93A-22AC-2E2E-66044C96CB1C</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF259418-E9DE-006E-BC57-9E6D67E08678"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

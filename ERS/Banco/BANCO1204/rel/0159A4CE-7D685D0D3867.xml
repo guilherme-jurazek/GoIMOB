@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" mainViewID="1C1D93AE-F529-B980-41A5-124770F19297">
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="GoIMOB(Relational)" id="0159A4CE-11D3-D79B-F6E1-7D685D0D3867" mainViewID="1C1D93AE-F529-B980-41A5-124770F19297">
 <createdBy>mateu</createdBy>
 <createdTime>2022-03-06 20:07:24 UTC</createdTime>
 <ownerDesignName>TrabENGSOFT2</ownerDesignName>

@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7F74FF8-7556-A232-CB2A-39B869C69F5C" name="AGENDAMENTO_VISITA">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>D5AAC8BA-720D-7E64-04CA-0D4AF437B0C4</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COD_AGENDAMENTO" id="44CB1617-7E63-2019-4F57-17F6AF0450C3">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>412ABBA5-9597-EE46-E6E3-0EF719BB438C</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORRETOR_COD_CORRETOR" id="950F845F-3F3F-BBBF-F058-F39B3444B3C9">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>0D21D7AA-CD73-AA71-B96A-C40C1446C6A9</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD742B94-6ED4-9C91-C3C7-82E931D99529" referredColumn="1AC44B57-35FD-85C4-D2E5-54F165F58568"/>
+</associations>
+</Column>
+<Column name="CORRETOR_CORRETORA_COD_COR" id="74C52F2B-1FE2-A921-73B2-5770B7AB7A8A">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>D893B73E-3856-4AC3-E896-ABB497A220FF</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD742B94-6ED4-9C91-C3C7-82E931D99529" referredColumn="5DEC77A1-73DE-D4EA-03C3-20998D836FCE"/>
+</associations>
+</Column>
+<Column name="USUARIO_COD_USU" id="85AFFD2C-163B-BC7D-BCC1-DAF9646AD6DD">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>70716545-245A-0FAA-CAB1-276925648B43</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB72514B-BBBE-0607-D4DC-12CBB3D48B3F" referredColumn="E41CD764-9A06-C9D0-4C98-0F2394E1BD98"/>
+</associations>
+</Column>
+<Column name="IMOVEL_COD_IMOVEL" id="102756C7-884C-AA60-26BA-61E857195B5F">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>E0A8FD76-0BD8-5036-16C7-9FB92A5B1434</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="368FF537-95B2-9A8B-E41B-247DF6C5F62C" referredColumn="37C68433-8D0A-35F7-0096-9287FA0B4C08"/>
+</associations>
+</Column>
+<Column name="DATA_AGENDAMENTO" id="8CB40FAF-B102-5FE9-E8C5-8117A8F3949A">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>344D133D-8E76-0C32-77F4-1821A4D48FB7</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A305FFD6-9AD7-62CB-5D68-8EFEBE7D374F" name="AGENDAMENTO_VISITA_PK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>6C1236B4-FB2C-68F5-8250-DD6D28C244FA</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44CB1617-7E63-2019-4F57-17F6AF0450C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="266668BE-C914-C967-7A19-DD5791F1293B" name="AGENDAMENTO_VISITA_CORRETOR_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>1614E98C-F23C-0102-5EB4-42F23D55446D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="950F845F-3F3F-BBBF-F058-F39B3444B3C9"/>
+<colUsage columnID="74C52F2B-1FE2-A921-73B2-5770B7AB7A8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD8C60C8-B855-2016-3640-D7E20D01FEC8" name="AGENDAMENTO_VISITA_USUARIO_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>7BACC2BD-79CC-6F7F-2081-894981C2779D</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85AFFD2C-163B-BC7D-BCC1-DAF9646AD6DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B487B13B-3A30-A83F-4C56-8B52F30FC073" name="AGENDAMENTO_VISITA_IMOVEL_FK">
+<createdBy>cebola</createdBy>
+<createdTime>2022-04-24 21:04:55 UTC</createdTime>
+<generatorID>E780E39B-1536-6454-C736-66D5F3B82E4E</generatorID>
+<ownerDesignName>BANCO1204</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="102756C7-884C-AA60-26BA-61E857195B5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
