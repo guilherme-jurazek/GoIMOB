@@ -2,6 +2,7 @@ package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public abstract class GenericDAO {
@@ -20,9 +21,24 @@ public abstract class GenericDAO {
     } catch (SQLException e) {
       throw new SQLException(e);
     }
-  };
+  }
 
-  public void read (String sql, Object... parametros) {};
-  public void update (String sql, Object... parametros) {};
-  public void deletar (String sql, Object... parametros) {};
+  public static ResultSet read (Connection con, String sql) throws SQLException {
+
+    try {
+
+      PreparedStatement stmt = con.prepareStatement(sql);
+      ResultSet rs = stmt.executeQuery();
+      stmt.close();
+      return rs;
+      
+
+    } catch (SQLException e) {
+      throw new SQLException(e);
+    }
+  }
+
+
+  public void update (String sql, Object... parametros) {}
+  public void deletar (String sql, Object... parametros) {}
 }

@@ -23,7 +23,7 @@ public class Imovel implements iAction {
     {
       case "POST":
 
-        String imovel_valor =  request.getParameter("imov_valor");
+        String imovel_valor =  request.getParameter("imov_valor"); //
         String proprietario_imovel = request.getParameter("imov_proprietario");
         String cidade_imovel = request.getParameter("imov_cidade");
         String bairro_imovel = request.getParameter("imov_bairro");

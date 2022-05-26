@@ -59,7 +59,15 @@
       <version>2.9.0</version>
     </dependency>
 
-    
+
+    <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+
 
   </dependencies>
 
@@ -89,9 +97,9 @@
           <artifactId>maven-war-plugin</artifactId>
           <version>3.3.2</version>
           <!-- <configuration> -->
-            <!-- <outputDirectory>/home/cebola/.apache-tomcat-9.0.62/webapps/</outputDirectory> -->
-            <!-- <outputDirectory>/home/cebola/.apache-tomcat-9.0.62/webapps/</outputDirectory> -->
-            <!-- <outputDirectory>C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps</outputDirectory> -->
+          <!-- <outputDirectory>/home/cebola/.apache-tomcat-9.0.62/webapps/</outputDirectory> -->
+          <!-- <outputDirectory>/home/cebola/.apache-tomcat-9.0.62/webapps/</outputDirectory> -->
+          <!-- <outputDirectory>C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps</outputDirectory> -->
           <!-- </configuration> -->
         </plugin>
         <plugin>

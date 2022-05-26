@@ -2,13 +2,14 @@
 <html lang="pt-BR">
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <%-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script> --%>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <%-- <meta charset="UTF-8"> --%>
     <%-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> --%>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Painel de Controle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
@@ -116,6 +117,23 @@
             box-shadow: 4px 2px 15px 1px black;
             border-collapse: collapse;
         }
+
+        .text-tipo-dado{
+            color: black;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+        .btn-edit-dados{
+            background-color: #85dD66;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-top: 40px;
+        }
+        .btn-edit-dados:hover{
+            background-color: #85ED66;
+        }
         /* ====X==== INFORMACOES PERFIL ====X==== */
     </style>
 </head>
@@ -165,52 +183,36 @@
             <div>
                 <div class="container-info-dinamic table-background-imoveis">
                     <div class="functions">
-                        <a href="GerarContrato.jsp"><button class="btn-op">Cadastrar novo Anúncio</button></a>
+                        <a><button class="btn-op"  data-toggle="modal" data-target="#myModal">Cadastrar novo Anúncio</button></a>
                         <a href=""><button class="btn-op">Filtros</button></a>
                         <a href=""><button class="btn-op">Ordenar </button></a>
                         <div style="text-align: right; margin:0 auto;">
                             <p class="tittle-table">Imóveis anunciados pelo corretor</p>
                         </div>
                     </div>
+
                     <div>
-                        <table class="table">
+                        <table id="table-gerar" class="table">
                             <thead>
                               <tr>
-                                <th>Nome Cliente</th>
-                                <th>Valor Imóvel</th>
-                                <th>Taxa Corretor</th>
-                                <th>Em aberto?</th>
-                                <th>Data Contrato</th>
-                                <th>Tipo Contrato</th>
+                                <th>Proprietário</th>
+                                <th>Bairro</th>
+                                <th>Cidade</th>
+                                <th>Valor</th>
+                                <th>Tipo Imóvel</th>
+                                <th>Status</th>
                               </tr>
                             </thead>
-                            <tbody>
-                              <tr class="tr-effect">
-                                <td>Cássia</td>
-                                <td>R$250.000</td>
-                                <td>14%</td>
-                                <td>Sim</td>
-                                <td>15/01/2012</td>
-                                <td>Venda</td>
-                              </tr>
-                              <tr class="tr-effect">
-                                <td>Mary</td>
-                                <td>R$850.000</td>
-                                <td>12%</td>
-                                <td>Não</td>
-                                <td>15/08/2018</td>
-                                <td>Venda</td>
-                              </tr>
-                              <tr class="tr-effect">
-                                <td>July</td>
-                                <td>R$2.000</td>
-                                <td>2%</td>
-                                <td>Não</td>
-                                <td>12/05/2022</td>
-                                <td>Aluguel</td>
-
-                              </tr>
-                            </tbody>
+                                <%-- <tbody id="anun_body">
+                                    <tr class="tr-effect">
+                                        <td>item.proprietario</td>
+                                        <td>item.bairr</td>
+                                        <td>${item.cidade}</td>
+                                        <td>${item.valor}</td>
+                                        <td>${item.tipoImovel}</td>
+                                        <td>${item.status}</td>
+                                    </tr>
+                                </tbody> --%>
                         </table>
                     </div>
                 </div>
@@ -293,19 +295,18 @@
                             <th>Tipo Contrato</th>
                           </tr>
                         </thead>
+                        
                         <tbody>
-                            <a href="index.jsp" style="editar-imovel">
-                                <tr class="tr-effect">
-                                    
-                                    <td>Cássia</td>
-                                    <td>R$250.000</td>
-                                    <td>14%</td>
-                                    <td>Sim</td>
-                                    <td>15/01/2012</td>
-                                    <td>Venda</td>
-                                   
-                                </tr>
-                             </a>
+                            <tr class="tr-effect">
+                                
+                                <td>Cássia</td>
+                                <td>R$250.000</td>
+                                <td>14%</td>
+                                <td>Sim</td>
+                                <td>15/01/2012</td>
+                                <td>Venda</td>
+                                
+                            </tr>
                           <tr class="tr-effect">
                             <td>Mary</td>
                             <td>R$850.000</td>
@@ -338,5 +339,95 @@
          <%-- A FAZER --%>
     </div>
     <%-- =====XXX======  FOOTER =====XXX====== --%>
+
+
+
+    <%-- ===============  MODAL ============== --%>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Cadastrar Anúncio do Imóvel</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form id="form-gerar" class="form-gerar" action="in" method="post">
+              <div class="row">
+                  <div class="col">
+                      <label for="nameCad"><p class="text-tipo-dado">Nome Proprietario</p></label>
+                      <input class="input-form-cadastro" type="text" placeholder="João Almeida" name="imov_proprietario" id="imov_proprietario"  required>
+                  </div>
+                  <div class="col">
+                      <label for="cepCad"><p class="text-tipo-dado">Cep do Imóvel</p></label>
+                      <input class="input-form-cadastro" type="text" placeholder="00000-000" name="imov_cep" id="imov_cep"  required>
+                  </div>
+              </div>
+               <div class="row">
+                  <div class="col">
+                      <label for="nameCad"><p class="text-tipo-dado">Rua do Imóvel</p></label>
+                      <input class="input-form-cadastro" type="text" placeholder="Rua Jacarezinhos" name="imov_rua" id="imov_rua" required>
+                  </div>
+                  <div class="col">
+                      <label for="cepCad"><p class="text-tipo-dado">Bairro do Imóvel</p></label>
+                      <input class="input-form-cadastro" type="text" placeholder="Bairro Bongiovanni" name="imov_bairro" id="imov_bairro" required>
+                  </div>
+              </div>
+               <div class="row">
+                  <div class="col">
+                      <label for="nameCad"><p class="text-tipo-dado">Número do Imóvel</p></label>
+                      <input class="input-form-cadastro" type="text" placeholder="17" name="imov_numero" id="imov_numero" required>
+                  </div>
+                  <div class="col">
+                      <label for="cepCad"><p class="text-tipo-dado">Cidade do Imóvel</p></label>
+                      <input class="input-form-cadastro" type="text" placeholder="Presidente Prudente" name="imov_cidade" id="imov_cidade" required>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <label for="emailCad"><p class="text-tipo-dado">Estado do Imóvel</p></label>
+                      <input class="input-form-cadastro" type="text" placeholder="SP" name="imov_uf" id="imov_uf" required> 
+                  </div>
+                  <div class="col">
+                      <label for="foneCad"><p class="text-tipo-dado">Valor do Imóvel</p></label>
+                      <input class="input-form-cadastro" type="text" placeholder="500.000" name="imov_valor" id="imov_valor" required>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <label for="foneCad"><p class="text-tipo-dado">Descrição do Imóvel</p></label>
+                      <textarea class="input-form-cadastro form-control" type="text" placeholder="Imóvel localizado próximo ao centro com 12 banheiros." name="anun_desc" id="anun_desc" required></textarea>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col">
+                      <label for="sexoCad"><p class="text-tipo-dado">Tipo de Anúncio</p></label>
+                      <select class="input-form-cadastro input-option" id="anun_tipo" name="anun_tipo" required>
+                          <option value="V" selected>Venda</option>
+                          <option value="A">Aluguel</option>
+                      </select>
+                  </div>
+                  <div class="col">
+                      <input type="submit" class="btn-edit-dados">
+                  </div>
+              </div>
+                <input type="hidden" name="action" value="Imovel">
+          </form>
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+    </div>
+    <script src="resources/js/painel_controle.js"></script>
+    <%-- =====XXX======  MODAL =====XXX====== --%>
 </body>
 </html> 

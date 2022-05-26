@@ -261,10 +261,10 @@
                     <div class="col">
                         <label for="sexoCad"><p class="text-tipo-dado">Sexo</p></label>
                         <select class="input-form-cadastro input-option" id="exampleFormControlSelect1" id="sexoCad" required disabled>
-                            <option>V�zio</option>
+                            <option>Vázio</option>
                             <option>Homem</option>
                             <option selected>Mulher</option>
-                            <option>Prefiro n�o dizer</option>
+                            <option>Prefiro não dizer</option>
                         </select>
                     </div>
                     <div class="col">
@@ -281,7 +281,7 @@
                         </select>
                     </div>
                     <div class="col">
-                        <input type="submit" value="Editar" class="btn-edit-dados"></input>
+                        <input type="submit" value="Editar" class="btn-edit-dados">
                     </div>
                 </div>
                  <input type="hidden" name="action" value="Usuario">

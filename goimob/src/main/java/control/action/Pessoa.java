@@ -22,7 +22,6 @@ public class Pessoa implements iAction {
     switch (request.getMethod()) {
 
       case "POST":
-
           String nome = request.getParameter("pes_nome"); // ok
           String dataNascimento = request.getParameter("pes_data_nasc"); // Faltando
           dataNascimento = "1998-09-18"; // Faltando
