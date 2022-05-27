@@ -359,41 +359,41 @@
               <div class="row">
                   <div class="col">
                       <label for="nameCad"><p class="text-tipo-dado">Nome Proprietario</p></label>
-                      <input class="input-form-cadastro" type="text" placeholder="João Almeida" name="imov_proprietario" id="imov_proprietario"  required>
+                      <input class="input-form-cadastro" type="text" placeholder="João Almeida" name="imov_proprietario" id="imov_proprietario" pattern="[a-zA-Z]{1,50}" required>
                   </div>
                   <div class="col">
                       <label for="cepCad"><p class="text-tipo-dado">Cep do Imóvel</p></label>
-                      <input class="input-form-cadastro" type="text" placeholder="00000-000" name="imov_cep" id="imov_cep"  required>
+                      <input class="input-form-cadastro" type="text" placeholder="00000-000" name="imov_cep" id="imov_cep" pattern="[0-9]{1,9}" required>
                   </div>
               </div>
                <div class="row">
                   <div class="col">
                       <label for="nameCad"><p class="text-tipo-dado">Rua do Imóvel</p></label>
-                      <input class="input-form-cadastro" type="text" placeholder="Rua Jacarezinhos" name="imov_rua" id="imov_rua" required>
+                      <input class="input-form-cadastro" type="text" placeholder="Rua Jacarezinhos" name="imov_rua" id="imov_rua" pattern="[a-zA-Z]{1,50}" required>
                   </div>
                   <div class="col">
                       <label for="cepCad"><p class="text-tipo-dado">Bairro do Imóvel</p></label>
-                      <input class="input-form-cadastro" type="text" placeholder="Bairro Bongiovanni" name="imov_bairro" id="imov_bairro" required>
+                      <input class="input-form-cadastro" type="text" placeholder="Bairro Bongiovanni" name="imov_bairro" id="imov_bairro" pattern="[a-zA-Z]{1,25}" required>
                   </div>
               </div>
                <div class="row">
                   <div class="col">
                       <label for="nameCad"><p class="text-tipo-dado">Número do Imóvel</p></label>
-                      <input class="input-form-cadastro" type="text" placeholder="17" name="imov_numero" id="imov_numero" required>
+                      <input class="input-form-cadastro" type="text" placeholder="17" name="imov_numero" id="imov_numero" pattern="[0-9]{1,9}" required>
                   </div>
                   <div class="col">
                       <label for="cepCad"><p class="text-tipo-dado">Cidade do Imóvel</p></label>
-                      <input class="input-form-cadastro" type="text" placeholder="Presidente Prudente" name="imov_cidade" id="imov_cidade" required>
+                      <input class="input-form-cadastro" type="text" placeholder="Presidente Prudente" name="imov_cidade" id="imov_cidade" pattern="[a-zA-Z]{1,50}" required>
                   </div>
               </div>
               <div class="row">
                   <div class="col">
                       <label for="emailCad"><p class="text-tipo-dado">Estado do Imóvel</p></label>
-                      <input class="input-form-cadastro" type="text" placeholder="SP" name="imov_uf" id="imov_uf" required> 
+                      <input class="input-form-cadastro" type="text" placeholder="SP" name="imov_uf" id="imov_uf" pattern="[A-Z]{1,3}" required> 
                   </div>
                   <div class="col">
                       <label for="foneCad"><p class="text-tipo-dado">Valor do Imóvel</p></label>
-                      <input class="input-form-cadastro" type="text" placeholder="500.000" name="imov_valor" id="imov_valor" required>
+                      <input class="input-form-cadastro" type="text" placeholder="500.000" name="imov_valor" id="imov_valor" pattern="[0-9]{1,10}" required>
                   </div>
               </div>
               <div class="row">
