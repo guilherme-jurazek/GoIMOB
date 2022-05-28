@@ -28,6 +28,7 @@ public class ListaAnuncioImovel implements iAction {
         List<EntidadeListaAnuncioImovel> lista = EntidadeListaAnuncioImovel.obterLista(request);
         String json = VARS.gson.toJson(lista);
         System.out.println(json);
+        
         retorno = new ControlObj("json", json);
         break;
 

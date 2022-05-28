@@ -96,31 +96,31 @@
                 <div class="row">
                     <div class="col">
                         <label for="nameCad"><p class="text-form">Nome e Sobrenome</p></label>
-                        <input class="input-form-cadastro" type="text" placeholder="João Batista" name="name" id="nameCad">
+                        <input class="input-form-cadastro" type="text" placeholder="João Batista" name="pes_nome" id="nameCad">
                     </div>
                     <div class="col">
                         <label for="cepCad"><p class="text-form">Cep</p></label>
-                        <input class="input-form-cadastro" type="text" placeholder="00000-000" name="cep" id="cepCad">
+                        <input class="input-form-cadastro" type="text" placeholder="00000-000" name="pes_cep" id="cepCad">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label for="emailCad"><p class="text-form">E-mail</p></label>
-                        <input class="input-form-cadastro" type="text" placeholder="example@example.com" name="email" id="emailCad">
+                        <input class="input-form-cadastro" type="text" placeholder="example@example.com" name="usu_email" id="emailCad">
                     </div>
                     <div class="col">
                         <label for="foneCad"><p class="text-form">Número Residencial</p></label>
-                        <input class="input-form-cadastro" type="text" placeholder="Exemplo: 25" name="nresidencia" id="foneCad">
+                        <input class="input-form-cadastro" type="text" placeholder="Exemplo: 25" name="pes_num_residencia" id="foneCad">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label for="senhaCad"><p class="text-form">Senha</p></label>
-                        <input class="input-form-cadastro" type="password" placeholder="1234Abc" name="senha" id="senhaCad">
+                        <input class="input-form-cadastro" type="password" placeholder="1234Abc" name="usu_senha" id="senhaCad">
                     </div>
                     <div class="col">
                         <label for="cpfCad"><p class="text-form">CPF</p></label>
-                        <input  class="input-form-cadastro" type="text" placeholder="Exemplo: 000.000.000-00" name="cpf" id="cpfCad">
+                        <input  class="input-form-cadastro" type="text" placeholder="Exemplo: 000.000.000-00" name="pes_fis_cpf" id="cpfCad">
                     </div>
                 </div>
                 <div class="row">
@@ -130,7 +130,7 @@
                     </div>
                     <div class="col">
                         <label for="sexoCad"><p class="text-form">Sexo</p></label>
-                        <select class="input-form-cadastro input-option" id="exampleFormControlSelect1" name="sexo" id="sexoCad">
+                        <select class="input-form-cadastro input-option" id="exampleFormControlSelect1" name="pes_fis_sexo" id="sexoCad">
                             <option value="V">Vazio</option >
                             <option value="M">Masculino</option>
                             <option value="F">Feminino</option>

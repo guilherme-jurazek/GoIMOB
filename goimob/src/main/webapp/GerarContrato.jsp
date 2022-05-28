@@ -122,7 +122,7 @@
                         </select>
                     </div>
                     <div class="col">
-                        <label ><p class="label-gerar">Código do dono do Imóvel</p></label>
+                        <label ><p class="label-gerar">Dono do Imóvel</p></label>
                         <select class="form-control input-gerar" id="exampleFormControlSelect1">
                             <option>145 - Francisco Assis</option>
                             <option>146 - Cassia Perego</option>
@@ -149,8 +149,8 @@
                         <input type="text" class="form-control input-gerar" id="email" placeholder="Exemplo: 5" name="email">
                     </div>
                     <div class="col">
-                        <label ><p class="label-gerar">Data do Contrato(dd/mm/aa)</p></label>
-                        <input type="password" class="form-control input-gerar" placeholder="Exemplo: 01/01/2022" name="pswd">
+                        <label ><p class="label-gerar">Data de Encerramento</p></label>
+                        <input type="date" class="form-control input-gerar" placeholder="Exemplo: 01/01/2022" name="pswd">
                     </div>
                 </div>
                 <div class="row">

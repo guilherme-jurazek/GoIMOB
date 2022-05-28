@@ -63,7 +63,7 @@ public class EntidadeListaAnuncioImovel {
     this.tipoImovel = tipoImovel;
   }
 
-
+  
   public static List<EntidadeListaAnuncioImovel> obterLista(HttpServletRequest request) {
     return DAO_ListaAnuncioImovel.recuperarLista(request);
   }
